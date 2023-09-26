@@ -53,9 +53,9 @@ app.get('/api/tt.ics', function(req, res) {
       })
 
     let cal = response.data;
-    for (let i = 0; i < courses.length; i++) {
-        cal = cal.replaceAll(courses[i].split(' ')[0], courses[i]);
-    }
+    // for (let i = 0; i < courses.length; i++) {
+    //     cal = cal.replaceAll(courses[i].split(' ')[0], courses[i]);
+    // }
 
 
     res.end(cal)
