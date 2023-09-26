@@ -10,6 +10,8 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 
 const icsLink = process.env.ICS_LINK;
 
+console.log(icsLink);
+
 const courses = [
     "COMP23311 Software Engineering 1",
     "COMP23412 Software Engineering 2",
