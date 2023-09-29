@@ -10,10 +10,10 @@ Get started at [https://aap9002.github.io/Timetable-ICS-Live-Editor/](https://aa
 <div style="display:flex; flex-direction: row;">
   <div width="400">
     <p>Before:</p>
-    <img src="https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/946f13a9-08f4-4c1b-aff7-b7b1f3f38481"  width="400"/>
+    <img src="https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/575a1e18-5d84-4494-9244-173f0934a81f"  width="400"/>
   </div>
   <div width="400">
     <p>After:</p>
-    <img src="https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/45cf4d8a-43d3-491d-9ff7-b94122cc2408" width="400"/>
+    <img src="https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/820b4b95-dad2-4d7f-bad5-ff50023995b3" width="400"/>
   </div>
 </div>
