@@ -8,9 +8,9 @@ const port = process.env.PORT || 5000;
 // This displays message that the server running and listening to specified port
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
-const icsLink = process.env.ICS_LINK;
+// const icsLink = process.env.ICS_LINK;
 
-console.log(icsLink);
+// console.log(icsLink);
 
 const courses = [
     "COMP23311 Software Engineering 1",
@@ -42,14 +42,19 @@ const courses = [
     "COMP28112 Distributed Systems",
     "MCEL10001 Exploring Enterprise",
     "MCEL10002 Entrepreneurial Skills"
-] 
+]
 
-app.get('/api/tt.ics', function(req, res) {
-  axios.get(icsLink)
+app.get('/api/v1/:uniqueAPI/tt.ics', function(req, res) {
+  const { uniqueAPI } = req.params; 
+  
+  var apiUrlDec = decodeURIComponent(uniqueAPI) // Decoding a URL encoded value
+  console.log(apiUrlDec)
+  
+  axios.get(apiUrlDec)
   .then(response => {
     res.writeHead(200, {
         "Content-Type": "text/calendar",
-        "Content-Disposition": "attachment; filename=timetable.ics"
+        "Content-Disposition": "attachment; filename=tt.ics"
       })
 
     let cal = response.data;
