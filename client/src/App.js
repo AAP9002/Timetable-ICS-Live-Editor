@@ -59,7 +59,7 @@ function App() {
       <p>PRs are welcome, please feel free to add courses, add a feature or fix a bug</p>
       <p>Github Repo: <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/'>https://github.com/AAP9002/Timetable-ICS-Live-Editor/</a></p>
       <br />
-      <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/blob/main/server/index.js'>Contribute by adding courses here</a>
+      <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/blob/main/server/allCourses.md'>Contribute by adding courses here</a>
 
       <footer className='w-100' style={{paddingTop:"30px", paddingBottom:"50px", borderTop:"solid",marginTop:"20px"}}>
         <p><a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/wiki'>Timetable-ICS-Live-Editor (T-I-L-E)</a> &#169; <a href='https://www.linkedin.com/in/alan-prophett/'>Alan Prophett</a></p>
