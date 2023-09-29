@@ -2,12 +2,18 @@
 
 Replaces course code with the actual course name on your timetable.
 
-Host the endpoint ```/api/tt.ics``` and with your manchester .ics link saved in the .ENV, it will get the timetable, make the changes and return the editied timetable to calender app.
-
 Events stay up to date in the same way they did before.
 
+Get started at [https://aap9002.github.io/Timetable-ICS-Live-Editor/](https://aap9002.github.io/Timetable-ICS-Live-Editor/)
+
 # Example
-Before:
-![Screenshot_20230926-230115](https://github.com/AAP9002/UoM-Timetable/assets/42409957/3d563802-150b-40a8-be36-d9d019a86451)
-After:
-![Screenshot_20230926-230102](https://github.com/AAP9002/UoM-Timetable/assets/42409957/f9a626dd-4088-4052-a726-f27b233d0e61)
+<div style="display:flex; flex-direction: row;">
+  <div width="400">
+    <p>Before:</p>
+    <img src="https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/946f13a9-08f4-4c1b-aff7-b7b1f3f38481"  width="400"/>
+  </div>
+  <div width="400">
+    <p>After:</p>
+    <img src="https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/45cf4d8a-43d3-491d-9ff7-b94122cc2408" width="400"/>
+  </div>
+</div>
