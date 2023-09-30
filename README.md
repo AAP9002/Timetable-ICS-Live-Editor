@@ -1,4 +1,6 @@
-# UoM-Timetable-Formatter
+
+![Screenshot from 2023-09-30 11-49-35](https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/390a7f9b-e74f-4b9f-89a6-818cba1577e7)
+
 
 Replaces course code with the actual course name on your timetable.
 
