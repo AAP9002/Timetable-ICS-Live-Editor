@@ -1,4 +1,4 @@
-# UoM-CS-Timetable-Formatter
+# UoM-Timetable-Formatter
 
 Replaces course code with the actual course name on your timetable.
 
@@ -17,3 +17,7 @@ Get started at [https://aap9002.github.io/Timetable-ICS-Live-Editor/](https://aa
     <img src="https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/820b4b95-dad2-4d7f-bad5-ff50023995b3" width="400"/>
   </div>
 </div>
+
+# Supported Courses
+- [x] Computer Science
+- [x] Microbiology

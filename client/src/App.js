@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import beforeImage from './images/Before.jpeg'
 import afterImage from './images/After.jpeg'
+import logo from './images/Logo3.png'
 
 // import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
@@ -11,8 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Timetable ICS Live Editor</h1>
-      <p>Time table editor designed to change your course codes to the actual course name. Available for University Of Manchester 2nd year Computer Science student. </p>
+      <img src={logo} alt="Timetable ICS Live Editor"/>
+      <p>Time table editor designed to change your course codes to the actual course name. Available for University Of Manchester <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00560/bsc-computer-science/'>Computer Science</a> and <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00609/bsc-microbiology/'>Microbiology.</a></p>
       <div className='d-flex' style={{maxWidth:'800px'}}>
         <div className='col-md-6'>
           <p style={{fontSize:"25px"}}>Before</p>
