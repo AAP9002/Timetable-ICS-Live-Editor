@@ -19,11 +19,14 @@ try {
     console.log('Error:', e.stack);
 }
 
+// regex to search the ICAL for the course code
+const pattern = /SUMMARY:[^\/]*\//g
 
 app.get('/api/v1/:uniqueAPI/tt.ics', function(req, res) {
   const { uniqueAPI } = req.params;
   
   var apiUrlDec = decodeURIComponent(uniqueAPI) // Decoding a UoM Timetable URL encoded value
+  console.log("V1 API hit")
   console.log(apiUrlDec)
 
   axios.get(apiUrlDec)
@@ -34,11 +37,29 @@ app.get('/api/v1/:uniqueAPI/tt.ics', function(req, res) {
         "Content-Disposition": "attachment; filename=tt.ics"
       })
 
-    // foreach course, replace code with name
-    // NB. if course list grows, it may be more efficient to store all courses in a DICT and only replace them
     let cal = response.data;
-    for (let i = 0; i < courses.length; i++) {
-        cal = cal.split(courses[i].split(' ')[0]).join(courses[i].split(' ').slice(1).join(' '));
+    // FInd all unique course codes in the ICS file
+    const uniqueMatches = new Set();
+
+    let match;
+    while ((match = pattern.exec(cal)) !== null) {
+      //console.log(match[0].split(':')[1].split('/')[0]);
+      uniqueMatches.add(match[0].split(':')[1].split('/')[0]);
+    }
+    const uniqueCourseCodesArray = Array.from(uniqueMatches);
+    //console.log(uniqueCourseCodesArray);
+
+    // for each unique course code, find the course name and replace the course code with the course name
+    for (let i = 0; i < uniqueCourseCodesArray.length; i++) {
+      const courseCode = uniqueCourseCodesArray[i];
+      try{
+        const courseName = courses.find(course => course.split(' ')[0] === courseCode).split(' ').slice(1).join(' ');
+        cal = cal.split(courseCode).join(courseName);
+      }
+      catch(e){
+        // if the course code is not found in the allCourses.md file, log it
+        console.log(courseCode + " not found in allCourses.md");
+      }
     }
 
     // once a day between 01:00 and 04:00, force a refresh of the events to restyle any new formatting
