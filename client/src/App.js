@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <img src={logo} alt="Timetable ICS Live Editor"/>
+      <img src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px'}}/>
       <p>Time table editor designed to change your course codes to the actual course name. Available for University Of Manchester <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00560/bsc-computer-science/'>Computer Science</a> and <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00609/bsc-microbiology/'>Microbiology.</a></p>
       <div className='d-flex' style={{maxWidth:'800px'}}>
         <div className='col-md-6'>
