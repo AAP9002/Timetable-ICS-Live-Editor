@@ -25,7 +25,7 @@ const pattern = /SUMMARY:[^\/]*\//g
 app.get('/api/v1/:uniqueAPI/tt.ics', function(req, res) {
   const { uniqueAPI } = req.params;
   
-  var apiUrlDec = decodeURIComponent(uniqueAPI) // Decoding a UoM Timetable URL encoded value
+  const apiUrlDec = decodeURIComponent(uniqueAPI) // Decoding a UoM Timetable URL encoded value
   console.log("V1 API hit")
   console.log(apiUrlDec)
 
