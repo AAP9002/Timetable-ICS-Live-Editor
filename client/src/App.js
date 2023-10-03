@@ -72,7 +72,7 @@ function App() {
       <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/blob/main/server/allCourses.md'>Contribute by adding courses here</a>
 
       <footer className='w-100' style={{paddingTop:"30px", paddingBottom:"50px", borderTop:"solid",marginTop:"20px"}}>
-        <p><a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/wiki'>Timetable-ICS-Live-Editor (T-I-L-E)</a> &#169; <a href='https://www.linkedin.com/in/alan-prophett/'>Alan Prophett</a></p>
+        <p>copyright &#169; 2023 <a href='https://www.linkedin.com/in/alan-prophett/'>Alan Prophett</a></p>
       </footer>
     </div>
   );
