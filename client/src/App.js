@@ -3,6 +3,7 @@ import { useState } from 'react';
 import beforeImage from './images/Before.jpeg'
 import afterImage from './images/After.jpeg'
 import logo from './images/Logo3.png'
+import ghLogo from './images/github-mark.png'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'10px', right:'10px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
       <img src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px'}}/>
       <p>Time table editor designed to change your course codes to the actual course name. Available for University Of Manchester <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00560/bsc-computer-science/'>Computer Science</a> and <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00609/bsc-microbiology/'>Microbiology.</a></p>
       <div className='d-flex' style={{maxWidth:'800px'}}>
