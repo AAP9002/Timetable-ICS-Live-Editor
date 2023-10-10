@@ -21,11 +21,31 @@
   color: #61dafb;
 }
 
+.onMobileSteps{
+  display: none;
+}
+
+#steps{
+  list-style: none;
+  margin: 10px;
+}
+
+#steps li{
+  padding-bottom: 10px;
+  text-align: start;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and  (max-width: 960px){
+  .onMobileSteps{
+    display: block;
   }
 }
