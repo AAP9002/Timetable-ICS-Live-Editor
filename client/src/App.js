@@ -80,9 +80,9 @@ function App() {
       <h2 id='supported' className='mt-5'>Supported Courses</h2>
       <p>T-I-L-E is available for a limited number of courses at UoM, you can add yours <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/blob/main/server/allCourses.md'>on github</a>.</p>
       <p>So far, we support:</p>
-      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00560/bsc-computer-science/' target='_blank'>Computer Science</a>
-      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00609/bsc-microbiology/' target='_blank'>Microbiology</a>
-      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/09894/bsc-materials-science-and-engineering/#course-profile' target='_blank'>Materials Science and Engineering</a>
+      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00560/bsc-computer-science/' target='_blank' rel="noreferrer" >Computer Science</a>
+      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00609/bsc-microbiology/' target='_blank' rel="noreferrer" >Microbiology</a>
+      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/09894/bsc-materials-science-and-engineering/#course-profile' target='_blank' rel="noreferrer" >Materials Science and Engineering</a>
 
       <footer className='w-100' style={{paddingTop:"30px", paddingBottom:"50px", borderTop:"solid",marginTop:"20px"}}>
         <p>copyright &#169; 2023 <a href='https://www.linkedin.com/in/alan-prophett/'>Alan Prophett</a></p>
