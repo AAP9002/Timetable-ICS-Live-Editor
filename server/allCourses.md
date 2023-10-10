@@ -1,4 +1,46 @@
-# Microbiology
+# BSc Materials Science and Engineering
+## Year 1
+MATH19731 Mathematics 1G1
+MATH19732 Mathematics 1G2
+MATS15101 Physics of Materials
+MATS15201 Equilibrium Thermodynamics
+MATS15301 Microstructures of Materials
+MATS15501 Computing & Communication
+MATS15551 Preliminary Chemistry Materials
+MATS16102 Mechanical Behaviour
+MATS16202 Structure of Solids
+MATS16302 Functional Properties
+MATS16402 Materials - Shaping the World
+MATS16661 Preliminary Physics
+## Year 2
+MATS23101 Mechanics of Materials
+MATS23201 Materials Synthesis and Sustainability
+MATS23301 Phase Transformations and Microstructure Control
+MATS23401 Materials Processing
+MATS23502 Deformation Mechanisms
+MATS23602 Functional Behaviour
+MATS23702 Design, Management and Team Project
+MATS23801 Biomaterials & Biological Interactions
+MATS23901 Smart & Nano Materials
+MATS24102 Engineering Alloys in Service
+MATS24112 Performance Polymers, Fibres and Textiles
+## Year 3
+MATS31101 Modelling and Data Tools for Materials Scientists
+MATS31201 Materials Characterisation and Analytical Techniques
+MATS31301 Composite & Advanced Materials
+MATS31401 Advanced Manufacturing Processes and Microfabrication
+MATS31501 Functional Materials & Devices
+MATS31601 Structural Integrity
+MATS31702 Themed Research Project
+MATS31802 Drug Delivery & Biosensors
+MATS31902 Polymer Synthesis & Characterisation
+MATS32102 Metallurgy of Engineering Alloys
+MATS32202 Corrosion Science & Engineering
+MATS32302 Stem Cell & Tissue Engineering
+MATS32402 Multiphase Polymers & Nanocomposites
+MATS32602 Textile Manufacturing Techniques
+MATS32702 Nanotechnology
+# BSc Microbiology
 ## Year 1
 BIOL10000 Academic Tutorials Year 1
 BIOL10212 Biochemistry
@@ -81,7 +123,7 @@ MCEL30022 Interdisciplinary Sustainable Development
 MCEL30051 Enterprise Strategy and Marketing
 MCEL30052 Enterprise Feasibility
 MCEL30122 Enterprise in Healthcare
-# Computer Science
+# BSc Computer Science
 ## Year 1
 COMP10120 First Year Team Project
 COMP11120 Mathematical Techniques for Computer Science
