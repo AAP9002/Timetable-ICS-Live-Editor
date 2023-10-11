@@ -25,3 +25,4 @@ Get started at [https://aap9002.github.io/Timetable-ICS-Live-Editor/](https://aa
 - [x] Microbiology
 - [x] Materials Science
 - [x] Areospace Engineering
+- [x] Physics
