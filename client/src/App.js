@@ -83,7 +83,8 @@ function App() {
       <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00560/bsc-computer-science/' target='_blank' rel="noreferrer" >Computer Science</a>
       <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00609/bsc-microbiology/' target='_blank' rel="noreferrer" >Microbiology</a>
       <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/09894/bsc-materials-science-and-engineering/#course-profile' target='_blank' rel="noreferrer" >Materials Science and Engineering</a>
-      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/03333/beng-aerospace-engineering/#course-profile' target='_blank' rel="noreferrer" >Aerospace Engineering</a>
+      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/03333/beng-aerospace-engineering/' target='_blank' rel="noreferrer" >Aerospace Engineering</a>
+      <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00638/bsc-physics/' target='_blank' rel="noreferrer" >Physics</a>
 
       <footer className='w-100' style={{paddingTop:"30px", paddingBottom:"50px", borderTop:"solid",marginTop:"20px"}}>
         <p>copyright &#169; 2023 <a href='https://www.linkedin.com/in/alan-prophett/'>Alan Prophett</a></p>
