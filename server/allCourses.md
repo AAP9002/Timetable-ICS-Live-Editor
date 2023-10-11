@@ -1,3 +1,41 @@
+# BEng Aerospace Engineering
+## Year 1
+AERO10301 Aerospace Design
+AERO10421 Fluid Mechanics for Aerospace and Mechanical Engineers
+AERO12001 Introduction to Aerospace Engineering
+AERO12101 Tools for Engineers (Aerospace)
+CIVL11001 Structures 1 (Aero)
+EEEN10492 Electrical Engineering Fundamentals
+MECH10002 Materials 1 (Aerospace)
+MECH10020 Workshop Practice
+MECH11122 Manufacturing Engineering 1 (Aerospace)
+MECH11622 Mechanics (Aerospace)
+MECH12012 Aerospace and Mechanical Thermodynamics
+## Year 2
+AERO20062 Modelling & Simulation 2 (Aerospace)
+AERO20121 Fluid Mechanics 2
+AERO20230 Aerospace Field Course
+AERO20400 Aircraft Performance and Design
+AERO21111 Space Systems
+AERO21211 Structures 2 (Aerospace)
+ENGM22491 Project Management (Aero/Mech)
+MECH20020 Workshop Practice
+MECH20432 Applied Thermodynamics (Aerospace)
+MECH20442 Dynamics
+MECH20542 Numerical Methods & Computing (Aerospace)
+## Year 3
+AERO30481 Control Engineering (Aerospace)
+AERO31030 Individual Project (Aerospace)
+AERO31212 Aerospace Propulsion
+AERO31302 Structures 3 (Aerospace)
+AERO31321 Aircraft Aerodynamics
+AERO31441 Vibrations & Aeroelasticity (Aerospace)
+AERO31521 Conceptual Aerospace Systems Design
+AERO32202 Flight Dynamics
+ENGM30461 Operations Management
+AERO30052 Modelling & Simulation 3
+MECH30432 Heat Transfer
+
 # BSc Materials Science and Engineering
 ## Year 1
 MATH19731 Mathematics 1G1

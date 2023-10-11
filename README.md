@@ -23,3 +23,5 @@ Get started at [https://aap9002.github.io/Timetable-ICS-Live-Editor/](https://aa
 # Supported Courses
 - [x] Computer Science
 - [x] Microbiology
+- [x] Materials Science
+- [x] Areospace Engineering
