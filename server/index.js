@@ -30,7 +30,9 @@ app.get('/api/v1/:uniqueAPI/tt.ics', function (req, res) {
   console.log(apiUrlDec)
 
   if (testValidUrl(apiUrlDec)) {
-    axios.get(apiUrlDec)
+    let rebuild = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/"+apiUrlDec.split('/')[6]+"/"+apiUrlDec.split('/')[7]+"/timetable.ics";
+    console.log(rebuild)
+    axios.get(rebuild)
       .then(response => {
 
         let cal = response.data;
@@ -94,5 +96,6 @@ app.get('/api/v1/:uniqueAPI/tt.ics', function (req, res) {
   return: bool if link is valid
 */
 function testValidUrl(url) {
-  return url.startsWith("https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/") && url.endsWith("/timetable.ics");
+  const validUrlPATTERN = /^https:\/\/scientia-eu-v4-api-d3-02\.azurewebsites\.net\/\/api\/ical\/[0-9a-fA-F-]+\/[0-9a-fA-F-]+\/timetable\.ics$/g;
+  return validUrlPATTERN.test(url);
 }
