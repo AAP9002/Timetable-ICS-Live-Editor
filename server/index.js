@@ -10,11 +10,11 @@ app.listen(port, () => console.log(`Listening on port ${port}`));
 // import courses from allCourses.md
 var courses = [];
 try {
-  var courses = fs.readFileSync('allCourses.md', 'utf8').split('\n');
-  // test courses are read correctly
-  // for (let i = 0; i < courses.length; i++) {
-  //   console.log(courses[i]);
-  // }
+  var courses = fs.readFileSync('../allCourses.md', 'utf8').split('\n');
+  //test courses are read correctly
+  for (let i = 0; i < courses.length; i++) {
+    console.log(courses[i]);
+  }
 } catch (e) {
   console.log('Error:', e.stack);
 }
