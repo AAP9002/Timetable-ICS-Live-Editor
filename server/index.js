@@ -8,9 +8,46 @@ var fs = require('fs');
 const syncForcedBreakpoint = require('./features/forcedBreakPoint.js')
 const replaceTitle = require('./features/replaceCodeName.js')
 
-
 ///////////////////////////////////////////// IMPORT FEATURES END //////////////////////////////////////////////
 
+///////////////////////////////////////////////// FEATURES /////////////////////////////////////////////////////
+
+/**
+ * perform modification defined by the user in stepsString
+ * - example of stepsString would be "00-02"
+ * - each code (e.g. "00") corresponds to one feature
+ * - perform steps in order
+ * @param {string} cal 
+ * @param {string} stepsString 
+ * @returns modified cal
+ */
+function performModifications(cal, stepsString) {
+
+  const steps = stepsString.split('-')
+
+  for (let i = 0; i < steps.length; i++) {
+    let step = steps[i];
+    console.log(step)
+
+    switch (step) {
+      case "00": // replace course code with just course name
+        cal = replaceTitle.replaceCourseCodesWithNames(cal, courses);
+        break;
+      case "01": // replace course code with course code and course name
+        cal = replaceTitle.replaceCourseCodesWithCodeAndNames(cal, courses);
+        break;
+      case "02": // force restyling of calender every 24 hours
+        cal = syncForcedBreakpoint.run(cal);
+        break;
+      default:
+        console.log("step "+ step + " called but not defined in performModifications switch")
+    }
+  }
+
+  return cal;
+}
+
+/////////////////////////////////////////////// FEATURES END////////////////////////////////////////////////////
 
 /////////////////////////////////////////////////// SETUP /////////////////////////////////////////////////////
 
@@ -52,10 +89,9 @@ app.get('/api/v1/:uniqueAPI/tt.ics', function (req, res) {
       getTimetable(rebuild).then(cal => {
         if (cal != null) {
 
-          ////// modification steps //////
-          cal = replaceTitle.replaceCourseCodesWithNames(cal, courses);
-          cal = syncForcedBreakpoint.run(cal);
-          //// modification steps end ////
+          // steps for default V1 modifications
+          let steps = "00-02"
+          cal = performModifications(cal, steps);
 
           res.writeHead(200, {
             "Content-Type": "text/calendar",
@@ -80,6 +116,40 @@ app.get('/api/v1/:uniqueAPI/tt.ics', function (req, res) {
 });
 
 ////////////////////////////////////////////////// API V1 END ///////////////////////////////////////////////////
+
+/////////////////////////////////////////////////// API V2 /////////////////////////////////////////////////////
+app.get('/api/v2/:steps/:uniqueAPIPart1/:uniqueAPIPart2/tt.ics', function (req, res) {
+  console.log("V2 API hit")
+
+  // Decoding a UoM Timetable URL encoded value
+  const { steps, uniqueAPIPart1, uniqueAPIPart2 } = req.params;
+
+  let URL = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/" + uniqueAPIPart1 + "/" + uniqueAPIPart2 + "/timetable.ics";
+
+  try {
+    getTimetable(URL).then(cal => {
+      if (cal != null) {
+
+        cal = performModifications(cal, steps)
+
+        res.writeHead(200, {
+          "Content-Type": "text/calendar",
+          "Content-Disposition": "attachment; filename=tt.ics"
+        })
+        res.end(cal) // return response as download
+      }
+      else {
+        throw ('Calender not received')
+      }
+    });
+  }
+  catch (e) {
+    console.log(e);
+    res.status(500).send("error")
+  }
+});
+
+////////////////////////////////////////////////// API V2 END ///////////////////////////////////////////////////
 
 ////////////////////////////////////////////// FUNDAMENTAL METHODS //////////////////////////////////////////////
 /**
