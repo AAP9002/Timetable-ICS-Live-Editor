@@ -36,16 +36,16 @@ function App() {
       </div>
 
       <br />
-      <h2 id='stepOne' className='mt-5'>STEP 1: Enter your UoM API URL</h2>
+      <h2 id='stepOne' className='mt-5'>STEP 1: Enter your UoM Timetable ICS Link</h2>
       <ol id='steps' style={{ width: "100vw", maxWidth:"500px", margin: "auto", padding: "0px 0px 40px 0px" }}>
         <li>1 . Visit <a href='https://timetables.manchester.ac.uk/timetables' target='_blank' rel='noreferrer'>https://timetables.manchester.ac.uk/timetables</a></li>
         <li>2 . Sign In</li>
         <li>3 . Click on the <b>Subscribe</b> button <b className='onMobileSteps'>(located in the top right menu <img src={settingsIcon} alt="settings icon"/> )</b></li>
         <li>4 . Click on <b>More</b></li>
         <li>5 . Click on <b>Copy</b></li>
-        <li>6 . Paste the URL into the box below</li>
+        <li>6 . Paste the Timetable ICS Link into the box below</li>
       </ol>
-      <input type="text" placeholder="Enter UoM API URL" onChange={(e) => {setUomAPI(e.target.value); setHiddenManual(true);}} style={{ minWidth: "80%" }} />
+      <input type="text" placeholder="Enter UoM ICS Link" onChange={(e) => {setUomAPI(e.target.value); setHiddenManual(true);}} style={{ minWidth: "80%" }} />
       <br />
 
       <h2 className="mt-5"> STEP 2: Add to calender</h2>
@@ -62,7 +62,7 @@ function App() {
           options="'Apple','Google','iCal','Outlook.com','Yahoo','MicrosoftTeams','Microsoft365'"
         />
         <btn className="btn btn-link" onClick={toggleHiddenManual}>set up manually</btn>
-        </>:<p>Please enter a valid UoM Timetable link in step 1</p>}
+        </>:<p>Please enter a valid UoM Timetable ICS link in step 1</p>}
         {hiddenManual?null:<>
       <p>Most calendar apps enable you to subscribe using a URL. Copy the URL below and follow your calendar app's subscription instructions.</p>
       <p style={{ fontWeight: "bold", minWidth: "80%", overflowWrap: "anywhere"}}>{newIcsUri}</p>
