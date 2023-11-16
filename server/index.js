@@ -56,7 +56,6 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 var courses = []; // Predefined courses from allCourses.md
-const validUrlPATTERN = /^https:\/\/scientia-eu-v4-api-d3-02\.azurewebsites\.net\/\/api\/ical\/[0-9a-fA-F-]+\/[0-9a-fA-F-]+\/timetable\.ics$/g; // REGEX for valid uom ics uri
 
 
 // import courses from allCourses.md
@@ -80,8 +79,9 @@ app.get('/api/v1/:uniqueAPI/tt.ics', function (req, res) {
   const { uniqueAPI } = req.params;
   const apiUrlDec = decodeURIComponent(uniqueAPI)
   //console.log(apiUrlDec)
-
-  if (testValidUrl(apiUrlDec)) {
+  //console.log(testValidUrl(apiUrlDec))
+  if (testValidUrl(apiUrlDec) == true)
+  {
     let rebuild = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/" + apiUrlDec.split('/')[6] + "/" + apiUrlDec.split('/')[7] + "/timetable.ics";
     console.log(rebuild)
 
@@ -167,6 +167,7 @@ app.get('/api/v2/:steps/:uniqueAPIPart1/:uniqueAPIPart2/tt.ics', function (req, 
  * @returns boolean if url valid
  */
 function testValidUrl(url) {
+  const validUrlPATTERN = /^https:\/\/scientia-eu-v4-api-d3-02\.azurewebsites\.net\/\/api\/ical\/[0-9a-fA-F-]+\/[0-9a-fA-F-]+\/timetable\.ics$/g; // REGEX for valid uom ics uri
   return validUrlPATTERN.test(url);
 }
 
