@@ -124,28 +124,36 @@ app.get('/api/v2/:steps/:uniqueAPIPart1/:uniqueAPIPart2/tt.ics', function (req, 
   // Decoding a UoM Timetable URL encoded value
   const { steps, uniqueAPIPart1, uniqueAPIPart2 } = req.params;
 
-  let URL = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/" + uniqueAPIPart1 + "/" + uniqueAPIPart2 + "/timetable.ics";
-
-  try {
-    getTimetable(URL).then(cal => {
-      if (cal != null) {
-
-        cal = performModifications(cal, steps)
-
-        res.writeHead(200, {
-          "Content-Type": "text/calendar",
-          "Content-Disposition": "attachment; filename=tt.ics"
-        })
-        res.end(cal) // return response as download
-      }
-      else {
-        throw ('Calender not received')
-      }
-    });
+  if( !containsOnlyUUID(uniqueAPIPart1) || !containsOnlyUUID(uniqueAPIPart2))
+  {
+    console.log("Invalid keys provided in API url")
+    res.status(403).send("Invalid keys provided in API url")
   }
-  catch (e) {
-    console.log(e);
-    res.status(500).send("error")
+  else{
+
+    let URL = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/" + uniqueAPIPart1 + "/" + uniqueAPIPart2 + "/timetable.ics";
+
+    try {
+      getTimetable(URL).then(cal => {
+        if (cal != null) {
+
+          cal = performModifications(cal, steps)
+
+          res.writeHead(200, {
+            "Content-Type": "text/calendar",
+            "Content-Disposition": "attachment; filename=tt.ics"
+          })
+          res.end(cal) // return response as download
+        }
+        else {
+          throw ('Calender not received')
+        }
+      });
+    }
+    catch (e) {
+      console.log(e);
+      res.status(500).send("error")
+    }
   }
 });
 
@@ -160,6 +168,20 @@ app.get('/api/v2/:steps/:uniqueAPIPart1/:uniqueAPIPart2/tt.ics', function (req, 
  */
 function testValidUrl(url) {
   return validUrlPATTERN.test(url);
+}
+
+/**
+ * Testing the parts of the API key
+ * - checking there is only UUID
+ * - reduce chance of Server-side request forgery
+ * 
+ * @param {string} inputString 
+ * @returns Weather the string is a valid part
+ */
+function containsOnlyUUID(inputString) {
+  // Regular expression to match only UUID
+  const letterAndDashRegex = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+  return letterAndDashRegex.test(inputString);
 }
 
 /**
