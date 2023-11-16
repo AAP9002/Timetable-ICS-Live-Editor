@@ -75,10 +75,10 @@ function App() {
       <p>PRs are welcome, please feel free to add courses, add a feature or fix a bug</p>
       <p>Github Repo: <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/'>https://github.com/AAP9002/Timetable-ICS-Live-Editor/</a></p>
       <br />
-      <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/blob/main/server/allCourses.md'>Contribute by adding courses here</a>
+      <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/blob/main/allCourses.md'>Contribute by adding courses here</a>
 
       <h2 id='supported' className='mt-5'>Supported Courses</h2>
-      <p>T-I-L-E is available for a limited number of courses at UoM, you can add yours <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/blob/main/server/allCourses.md'>on github</a>.</p>
+      <p>T-I-L-E is available for a limited number of courses at UoM, you can add yours <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/blob/main/allCourses.md'>on github</a>.</p>
       <p>So far, we support:</p>
       <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00560/bsc-computer-science/' target='_blank' rel="noreferrer" >Computer Science</a>
       <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00609/bsc-microbiology/' target='_blank' rel="noreferrer" >Microbiology</a>

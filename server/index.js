@@ -2,16 +2,67 @@ const express = require('express');
 const app = express();
 const axios = require('axios');
 var fs = require('fs');
-const port = process.env.PORT || 5000;
+
+/////////////////////////////////////////////// IMPORT FEATURES ////////////////////////////////////////////////
+
+const syncForcedBreakpoint = require('./features/forcedBreakPoint.js')
+const replaceTitle = require('./features/replaceCodeName.js')
+
+///////////////////////////////////////////// IMPORT FEATURES END //////////////////////////////////////////////
+
+///////////////////////////////////////////////// FEATURES /////////////////////////////////////////////////////
+
+/**
+ * perform modification defined by the user in stepsString
+ * - example of stepsString would be "00-02"
+ * - each code (e.g. "00") corresponds to one feature
+ * - perform steps in order
+ * @param {string} cal 
+ * @param {string} stepsString 
+ * @returns modified cal
+ */
+function performModifications(cal, stepsString) {
+
+  const steps = stepsString.split('-')
+
+  for (let i = 0; i < steps.length; i++) {
+    let step = steps[i];
+    console.log(step)
+
+    switch (step) {
+      case "00": // replace course code with just course name
+        cal = replaceTitle.replaceCourseCodesWithNames(cal, courses);
+        break;
+      case "01": // replace course code with course code and course name
+        cal = replaceTitle.replaceCourseCodesWithCodeAndNames(cal, courses);
+        break;
+      case "02": // force restyling of calender every 24 hours
+        cal = syncForcedBreakpoint.run(cal);
+        break;
+      default:
+        console.log("step "+ step + " called but not defined in performModifications switch")
+    }
+  }
+
+  return cal;
+}
+
+/////////////////////////////////////////////// FEATURES END////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////// SETUP /////////////////////////////////////////////////////
 
 // This displays message that the server running and listening to specified port
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
+var courses = []; // Predefined courses from allCourses.md
+const validUrlPATTERN = /^https:\/\/scientia-eu-v4-api-d3-02\.azurewebsites\.net\/\/api\/ical\/[0-9a-fA-F-]+\/[0-9a-fA-F-]+\/timetable\.ics$/g; // REGEX for valid uom ics uri
+
+
 // import courses from allCourses.md
-var courses = [];
 try {
-  var courses = fs.readFileSync('allCourses.md', 'utf8').split('\n');
-  // test courses are read correctly
+  var courses = fs.readFileSync('../allCourses.md', 'utf8').split('\n');
+  //test courses are read correctly
   // for (let i = 0; i < courses.length; i++) {
   //   console.log(courses[i]);
   // }
@@ -19,83 +70,147 @@ try {
   console.log('Error:', e.stack);
 }
 
-// regex to search the ICAL for the course code
-const pattern = /SUMMARY:[^\/]*\//g
+////////////////////////////////////////////////// SETUP END ///////////////////////////////////////////////////
 
+/////////////////////////////////////////////////// API V1 /////////////////////////////////////////////////////
 app.get('/api/v1/:uniqueAPI/tt.ics', function (req, res) {
-  const { uniqueAPI } = req.params;
-
-  const apiUrlDec = decodeURIComponent(uniqueAPI) // Decoding a UoM Timetable URL encoded value
   console.log("V1 API hit")
-  console.log(apiUrlDec)
+
+  // Decoding a UoM Timetable URL encoded value
+  const { uniqueAPI } = req.params;
+  const apiUrlDec = decodeURIComponent(uniqueAPI)
+  //console.log(apiUrlDec)
 
   if (testValidUrl(apiUrlDec)) {
-    let rebuild = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/"+apiUrlDec.split('/')[6]+"/"+apiUrlDec.split('/')[7]+"/timetable.ics";
+    let rebuild = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/" + apiUrlDec.split('/')[6] + "/" + apiUrlDec.split('/')[7] + "/timetable.ics";
     console.log(rebuild)
-    axios.get(rebuild)
-      .then(response => {
 
-        let cal = response.data;
-        // FInd all unique course codes in the ICS file
-        const uniqueMatches = new Set();
+    try {
+      getTimetable(rebuild).then(cal => {
+        if (cal != null) {
 
-        let match;
-        while ((match = pattern.exec(cal)) !== null) {
-          //console.log(match[0].split(':')[1].split('/')[0]);
-          uniqueMatches.add(match[0].split(':')[1].split('/')[0]);
+          // steps for default V1 modifications
+          let steps = "00-02"
+          cal = performModifications(cal, steps);
+
+          res.writeHead(200, {
+            "Content-Type": "text/calendar",
+            "Content-Disposition": "attachment; filename=tt.ics"
+          })
+          res.end(cal) // return response as download
         }
-        const uniqueCourseCodesArray = Array.from(uniqueMatches);
-        //console.log(uniqueCourseCodesArray);
-
-        // for each unique course code, find the course name and replace the course code with the course name
-        for (let i = 0; i < uniqueCourseCodesArray.length; i++) {
-          const courseCode = uniqueCourseCodesArray[i];
-          try {
-            const courseName = courses.find(course => course.split(' ')[0] === courseCode).split(' ').slice(1).join(' ');
-            cal = cal.split(courseCode).join(courseName);
-          }
-          catch (e) {
-            // if the course code is not found in the allCourses.md file, log it
-            console.log(courseCode + " not found in allCourses.md");
-          }
+        else {
+          throw ('Calender not received')
         }
-
-        // once a day between 01:00 and 04:00, force a refresh of the events to restyle any new formatting
-        // this is as modifications to the event will not be recognised and updated unless the UoM event changes on the timetabling system itself
-        // so this will manual set the last modified each day to force an update in the calender app
-        // NB. it will stop doing this at 4 am so any changes in the day will be recognised and updated live
-        // NB. 3 hour window set as the ICS is set to refresh evert 2 hours, so this should affect all users
-        const date = new Date();
-        const hour = date.getHours();
-        if (hour >= 1 && hour <= 4) {
-          datestr = date.toISOString().split('T')[0];
-          datestr = datestr.split('-').join('');
-          datestr = "LAST-MODIFIED:" + datestr + "T000000";
-          const regex = /^LAST-MODIFIED:.*/gm;
-          cal = cal.replace(regex, datestr);
-        }
-
-        //HTTP Head
-        res.writeHead(200, {
-          "Content-Type": "text/calendar",
-          "Content-Disposition": "attachment; filename=tt.ics"
-        })
-
-        res.end(cal) // return response as download
       });
+    }
+    catch (e) {
+      console.log(e);
+      res.status(500).send("error")
+    }
+
   }
   else {
     res.status(400).send("Invalid API URL")
   }
 });
 
-/*
-  Test for valid api url
-  - checks if the url is a valid UoM api url
-  Params: string url
-  return: bool if link is valid
-*/
+////////////////////////////////////////////////// API V1 END ///////////////////////////////////////////////////
+
+/////////////////////////////////////////////////// API V2 /////////////////////////////////////////////////////
+app.get('/api/v2/:steps/:uniqueAPIPart1/:uniqueAPIPart2/tt.ics', function (req, res) {
+  console.log("V2 API hit")
+
+  // Decoding a UoM Timetable URL encoded value
+  const { steps, uniqueAPIPart1, uniqueAPIPart2 } = req.params;
+
+  if( !containsOnlyUUID(uniqueAPIPart1) || !containsOnlyUUID(uniqueAPIPart2))
+  {
+    console.log("Invalid keys provided in API url")
+    res.status(403).send("Invalid keys provided in API url")
+  }
+  else{
+
+    let URL = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/" + uniqueAPIPart1 + "/" + uniqueAPIPart2 + "/timetable.ics";
+
+    try {
+      getTimetable(URL).then(cal => {
+        if (cal != null) {
+
+          cal = performModifications(cal, steps)
+
+          res.writeHead(200, {
+            "Content-Type": "text/calendar",
+            "Content-Disposition": "attachment; filename=tt.ics"
+          })
+          res.end(cal) // return response as download
+        }
+        else {
+          throw ('Calender not received')
+        }
+      });
+    }
+    catch (e) {
+      console.log(e);
+      res.status(500).send("error")
+    }
+  }
+});
+
+////////////////////////////////////////////////// API V2 END ///////////////////////////////////////////////////
+
+////////////////////////////////////////////// FUNDAMENTAL METHODS //////////////////////////////////////////////
+/**
+ * Test for valid api url
+ * - checks if the url is a valid UoM api url
+ * @param {string} user url 
+ * @returns boolean if url valid
+ */
 function testValidUrl(url) {
-  const validUrlPATTERN = /^https:\/\/scientia-eu-v4-api-d3-02\.azurewebsites\.net\/\/api\/ical\/[0-9a-fA-F-]+\/[0-9a-fA-F-]+\/timetable\.ics$/g;
   return validUrlPATTERN.test(url);
 }
+
+/**
+ * Testing the parts of the API key
+ * - checking there is only UUID
+ * - reduce chance of Server-side request forgery
+ * 
+ * @param {string} inputString 
+ * @returns Weather the string is a valid part
+ */
+function containsOnlyUUID(inputString) {
+  // Regular expression to match only UUID
+  const letterAndDashRegex = /^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$/;
+  return letterAndDashRegex.test(inputString);
+}
+
+/**
+ * Get remote timetable and return a string
+ * @param {string} timetableUri 
+ * @returns string of remote calender contents
+ */
+async function getTimetable(timetableUri) {
+  try {
+    let response = await axios({
+      url: timetableUri,
+      method: 'get',
+      timeout: 8000,
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    });
+
+    if (response.status == 200) {
+      return response.data;
+    }
+    else {
+      throw ('axios failed: status ' + response.status)
+    }
+  }
+  catch (e) {
+    //console.log(e);
+    return null;
+  }
+}
+
+////////////////////////////////////////////// FUNDAMENTAL METHODS END //////////////////////////////////////////////
