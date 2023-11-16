@@ -6,14 +6,13 @@
 // @returns : the calender in string format
 
 
-const pattern = /SUMMARY:[^\/]*\//g // REGEX to search the ICAL for the course code
-
 /**
  * List unique course names in the string
  * @param {string} cal 
  * @returns List of unique course codes
  */
 function parseCourseCodes(cal) {
+    const pattern = /SUMMARY:[^\/]*\//g // REGEX to search the ICAL for the course code
     const uniqueMatches = new Set();
 
     let match;

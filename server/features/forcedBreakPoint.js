@@ -6,8 +6,6 @@
 // @returns : the calender in string format
 // @notes : Be aware the time is based on the server time not UTC
 
-const regex = /^LAST-MODIFIED:.*/gm;
-
 /**
  * Force events to update format once a day
  * @param {string} cal 
@@ -19,6 +17,7 @@ function run(cal) {
     // so this will manual set the last modified each day to force an update in the calender app
     // NB. it will stop doing this at 4 am so any changes in the day will be recognised and updated live
     // NB. 3 hour window set as the ICS is set to refresh evert 2 hours, so this should affect all users
+    const regex = /^LAST-MODIFIED:.*/gm;
     const date = new Date();
     const hour = date.getHours();
     if (hour >= 1 && hour <= 4) {
