@@ -7,6 +7,7 @@ var fs = require('fs');
 
 const syncForcedBreakpoint = require('./features/forcedBreakPoint.js')
 const replaceTitle = require('./features/replaceCodeName.js')
+const addcheckinLinks = require('./features/addcheckinLinks.js')
 
 ///////////////////////////////////////////// IMPORT FEATURES END //////////////////////////////////////////////
 
@@ -36,9 +37,17 @@ function performModifications(cal, stepsString) {
       case "01": // replace course code with course code and course name
         cal = replaceTitle.replaceCourseCodesWithCodeAndNames(cal, courses);
         break;
-      case "02": // force restyling of calender every 24 hours
+      case "02": // add a checkin link in description
+        cal = addcheckinLinks.insertCheckInLink(cal);
+        break;
+      case "03": // force restyling of calender every 24 hours
         cal = syncForcedBreakpoint.run(cal);
         break;
+      // Add a new feature here.
+      // I just submit first. Actually I am not sure if this featured is better used directly with other features or seperated with other features
+      //case "03": // add a checkin link in description
+      //  cal = addcheckinLinks.insertCheckInLink(cal);
+      //  break;
       default:
         console.log("step "+ step + " called but not defined in performModifications switch")
     }
@@ -52,6 +61,7 @@ function performModifications(cal, stepsString) {
 /////////////////////////////////////////////////// SETUP /////////////////////////////////////////////////////
 
 // This displays message that the server running and listening to specified port
+//const port = process.env.PORT || 8080;
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
