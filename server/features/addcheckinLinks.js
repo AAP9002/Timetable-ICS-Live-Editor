@@ -11,7 +11,7 @@
  */
 
 function insertCheckInLink(cal) {
-    console.log("test")
+    //console.log("test")
 
     /*
     const eventDescriptionPattern = /(DESCRIPTION:Event type:.*?\\n)(Location:.*?\\n)/gs;
@@ -26,7 +26,7 @@ function insertCheckInLink(cal) {
     if (cal.match(descriptionPattern)) {
       //return cal.replace(eventDescriptionPattern, `$1\n${checkInLink}$2`);
       cal = cal.replace(descriptionPattern, `${checkInLink}`);
-      console.log(cal);
+      //console.log(cal);
     } else {
       console.warn("No event description match found!");
     }
