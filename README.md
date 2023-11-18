@@ -2,8 +2,8 @@
 [![.github/workflows/deploy.yml](https://github.com/AAP9002/Timetable-ICS-Live-Editor/actions/workflows/deploy.yml/badge.svg)](https://github.com/AAP9002/Timetable-ICS-Live-Editor/actions/workflows/deploy.yml)
 [![GitHub last commit (branch)](https://img.shields.io/github/last-commit/AAP9002/Timetable-ICS-Live-Editor/main?label=Last%20Live%20Publish&logo=iterm2)](https://github.com/AAP9002/Timetable-ICS-Live-Editor/)
 [![Website](https://img.shields.io/website?url=https%3A%2F%2Faap9002.github.io%2FTimetable-ICS-Live-Editor%2F&logo=githubpages)](https://aap9002.github.io/Timetable-ICS-Live-Editor/)
-![GitHub issues](https://img.shields.io/github/issues/AAP9002/Timetable-ICS-Live-Editor)
-![GitHub contributors](https://img.shields.io/github/contributors-anon/aap9002/Timetable-ICS-Live-Editor)
+[![GitHub issues](https://img.shields.io/github/issues/AAP9002/Timetable-ICS-Live-Editor)](https://github.com/AAP9002/Timetable-ICS-Live-Editor/issues)
+[![GitHub contributors](https://img.shields.io/github/contributors-anon/aap9002/Timetable-ICS-Live-Editor)](https://github.com/AAP9002/Timetable-ICS-Live-Editor#contributors)
 
 <p align="center">
   <img src='https://github.com/AAP9002/Timetable-ICS-Live-Editor/assets/42409957/390a7f9b-e74f-4b9f-89a6-818cba1577e7'/>
