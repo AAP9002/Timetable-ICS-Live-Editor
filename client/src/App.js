@@ -11,7 +11,29 @@ import NavBar from './components/NavBar'
 function App() {
   const [uomAPI, setUomAPI] = useState("");
   const[hiddenManual, setHiddenManual] = useState(true);
-  const newIcsUri = "https://tile.alan-p.com/api/v1/" + encodeURIComponent(uomAPI) + "/tt.ics";
+  const [newIcsUri, setNewIcsUri] = useState("");
+
+  function getIds(url){
+    let parts = url.split('/')
+    const letterAndDashRegex = /[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/i;
+    let matches = [];
+    for(let i of parts){
+      if(letterAndDashRegex.test(i)){
+        matches.push(i)
+      }
+    }
+    return matches;
+  }
+
+  function buildApiUrl(e){
+    //console.log(e.target.value)
+    setUomAPI(e.target.value);
+    let matches = getIds(e.target.value)
+    console.log(matches)
+    setHiddenManual(true);
+
+    setNewIcsUri(`https://tile.alan-p.com/api/v2/00-02/${matches[0]}/${matches[1]}/tt.ics`);
+  }
 
   const toggleHiddenManual = () => {
     setHiddenManual(!hiddenManual);
@@ -45,8 +67,9 @@ function App() {
         <li>5 . Click on <b>Copy</b></li>
         <li>6 . Paste the Timetable ICS Link into the box below</li>
       </ol>
-      <input type="text" placeholder="Enter UoM ICS Link" onChange={(e) => {setUomAPI(e.target.value); setHiddenManual(true);}} style={{ minWidth: "80%" }} />
+      <input type="text" placeholder="Enter UoM ICS Link" onChange={buildApiUrl} style={{ minWidth: "80%" }} />
       <br />
+      
 
       <h2 className="mt-5"> STEP 2: Add to calender</h2>
       {uomAPI.endsWith('.ics')?<>
@@ -61,7 +84,7 @@ function App() {
           subscribe
           options="'Apple','Google','iCal','Outlook.com','Yahoo','MicrosoftTeams','Microsoft365'"
         />
-        <btn className="btn btn-link" onClick={toggleHiddenManual}>set up manually</btn>
+        <button className="btn btn-link" onClick={toggleHiddenManual}>set up manually</button>
         </>:<p>Please enter a valid UoM Timetable ICS link in step 1</p>}
         {hiddenManual?null:<>
       <p>Most calendar apps enable you to subscribe using a URL. Copy the URL below and follow your calendar app's subscription instructions.</p>
@@ -70,7 +93,7 @@ function App() {
 
       <h2 className='mt-5'> STEP 3: Optional</h2>
       <p>Enter your email so we can alert you with any major issues or updates (it will not be used for spam, only when there is a problem with keeping your timetable up to date!)</p>
-      <iframe title='Mailing list' src="https://docs.google.com/forms/d/e/1FAIpQLScIt5gAkHQxIrGUomY-IaFZvG8jFXHk72oTsLY3PsssLbAWLw/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <iframe title='Mailing list' src="https://docs.google.com/forms/d/e/1FAIpQLScIt5gAkHQxIrGUomY-IaFZvG8jFXHk72oTsLY3PsssLbAWLw/viewform?embedded=true" width="100%" height="500">Loading…</iframe>
       <h2 id='contribute' className='mt-5'>Open to contributions</h2>
       <p>PRs are welcome, please feel free to add courses, add a feature or fix a bug</p>
       <p>Github Repo: <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/'>https://github.com/AAP9002/Timetable-ICS-Live-Editor/</a></p>
