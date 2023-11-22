@@ -9,6 +9,12 @@
     align-items:flex-start;
     z-index: 20;
   }
+
+  .menu svg{
+    background-color: #efefef;
+    border-radius: 50%;
+    opacity: 90%;
+  }
   
   .menu a, .menu svg{
     animation: 0.5s ease-out 0s 1 slideInLeft;
