@@ -11,6 +11,29 @@ const addcheckinLinks = require('./features/addcheckinLinks.js')
 
 ///////////////////////////////////////////// IMPORT FEATURES END //////////////////////////////////////////////
 
+/////////////////////////////////////////////////// SETUP /////////////////////////////////////////////////////
+
+// This displays message that the server running and listening to specified port
+//const port = process.env.PORT || 8080;
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`Listening on port ${port}`));
+
+var courses = []; // Predefined courses from allCourses.md
+
+
+// import courses from allCourses.md
+try {
+  var courses = fs.readFileSync('../allCourses.md', 'utf8').split('\n');
+  //test courses are read correctly
+  // for (let i = 0; i < courses.length; i++) {
+  //   console.log(courses[i]);
+  // }
+} catch (e) {
+  console.log('Error:', e.stack);
+}
+
+////////////////////////////////////////////////// SETUP END ///////////////////////////////////////////////////
+
 ///////////////////////////////////////////////// FEATURES /////////////////////////////////////////////////////
 
 /**
@@ -52,29 +75,6 @@ function performModifications(cal, stepsString) {
 }
 
 /////////////////////////////////////////////// FEATURES END////////////////////////////////////////////////////
-
-/////////////////////////////////////////////////// SETUP /////////////////////////////////////////////////////
-
-// This displays message that the server running and listening to specified port
-//const port = process.env.PORT || 8080;
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log(`Listening on port ${port}`));
-
-var courses = []; // Predefined courses from allCourses.md
-
-
-// import courses from allCourses.md
-try {
-  var courses = fs.readFileSync('../allCourses.md', 'utf8').split('\n');
-  //test courses are read correctly
-  // for (let i = 0; i < courses.length; i++) {
-  //   console.log(courses[i]);
-  // }
-} catch (e) {
-  console.log('Error:', e.stack);
-}
-
-////////////////////////////////////////////////// SETUP END ///////////////////////////////////////////////////
 
 /////////////////////////////////////////////////// API V1 /////////////////////////////////////////////////////
 app.get('/api/v1/:uniqueAPI/tt.ics', function (req, res) {
