@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import beforeImage from './images/Before.jpeg'
 import afterImage from './images/After.jpeg'
 import logo from './images/Logo3.png'
@@ -7,11 +7,14 @@ import ghLogo from './images/github-mark.png'
 import settingsIcon from './images/settings icon publish.png'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 import NavBar from './components/NavBar'
+import CustomizationSection from './components/customization/CustomizationSection';
 
 function App() {
   const [uomAPI, setUomAPI] = useState("");
   const[hiddenManual, setHiddenManual] = useState(true);
   const [newIcsUri, setNewIcsUri] = useState("");
+  const [featureCodes, setFeatureCodes] = useState("00-02");
+
 
   function getIds(url){
     let parts = url.split('/')
@@ -25,19 +28,20 @@ function App() {
     return matches;
   }
 
-  function buildApiUrl(e){
-    //console.log(e.target.value)
-    setUomAPI(e.target.value);
-    let matches = getIds(e.target.value)
-    console.log(matches)
+  useEffect(()=>{
+    let matches = getIds(uomAPI)
+    //console.log(matches)
     setHiddenManual(true);
-
-    setNewIcsUri(`https://tile.alan-p.com/api/v2/00-02/${matches[0]}/${matches[1]}/tt.ics`);
-  }
+    setNewIcsUri(`https://tile.alan-p.com/api/v2/${featureCodes}/${matches[0]}/${matches[1]}/tt.ics`);
+  }, [uomAPI,featureCodes])
 
   const toggleHiddenManual = () => {
     setHiddenManual(!hiddenManual);
   }
+
+  const handleFeatureCodeStateChange = (newState) => {
+    setFeatureCodes(newState);
+  };
 
   return (
     <div className="App">
@@ -67,11 +71,14 @@ function App() {
         <li>5 . Click on <b>Copy</b></li>
         <li>6 . Paste the Timetable ICS Link into the box below</li>
       </ol>
-      <input type="text" placeholder="Enter UoM ICS Link" onChange={buildApiUrl} style={{ minWidth: "80%" }} />
+      <input type="text" placeholder="Enter UoM ICS Link" onChange={(e)=>{setUomAPI(e.target.value)}} style={{ minWidth: "80%" }} />
       <br />
-      
 
-      <h2 className="mt-5"> STEP 2: Add to calender</h2>
+      <h2 className="mt-5"> STEP 2: Choose features</h2>
+      <p>Select your features to customise your experience.</p>
+      <CustomizationSection onSetFeatureCodes={handleFeatureCodeStateChange}/>      
+
+      <h2 className="mt-5"> STEP 3: Add to calender</h2>
       {uomAPI.endsWith('.ics')?<>
       <p>Select your preferred calender app</p>
         <AddToCalendarButton
@@ -86,12 +93,15 @@ function App() {
         />
         <button className="btn btn-link" onClick={toggleHiddenManual}>set up manually</button>
         </>:<p>Please enter a valid UoM Timetable ICS link in step 1</p>}
+        
         {hiddenManual?null:<>
       <p>Most calendar apps enable you to subscribe using a URL. Copy the URL below and follow your calendar app's subscription instructions.</p>
       <p style={{ fontWeight: "bold", minWidth: "80%", overflowWrap: "anywhere"}}>{newIcsUri}</p>
       </>}
 
-      <h2 className='mt-5'> STEP 3: Optional</h2>
+      <p>Note: You can change the setup at a later time by removing the calender in your app and completing the set up again.</p>
+
+      <h2 className='mt-5'> STEP 4: Optional</h2>
       <p>Enter your email so we can alert you with any major issues or updates (it will not be used for spam, only when there is a problem with keeping your timetable up to date!)</p>
       <iframe title='Mailing list' src="https://docs.google.com/forms/d/e/1FAIpQLScIt5gAkHQxIrGUomY-IaFZvG8jFXHk72oTsLY3PsssLbAWLw/viewform?embedded=true" width="100%" height="500">Loading…</iframe>
       <h2 id='contribute' className='mt-5'>Open to contributions</h2>
