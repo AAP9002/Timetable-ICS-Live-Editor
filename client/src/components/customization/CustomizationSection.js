@@ -94,7 +94,7 @@ const CustomizationSection = ({onSetFeatureCodes}) => {
           </td>
         </tr>
       </table>
-      <p>RAW CONFIG: {resultingConfig}</p>
+      {/* <p>RAW CONFIG: {resultingConfig}</p> */}
     </>
   );
 }
