@@ -62,11 +62,11 @@ const CustomizationSection = ({onSetFeatureCodes}) => {
           </td>
         </tr>
         <tr style={code00state?{visibility:'visible', maxHeight:'fit-content'}:{visibility:'hidden', maxHeight:"0px"}}>
-          <td width="40px" onClick={(e)=>{alert("Leave course codes in event titles:\nKeeps both the course name and code in the title, to have the best of both worlds.")}}>
+          <td width="40px" onClick={(e)=>{alert("Add course codes in event titles:\nKeeps both the course name and code in the title, to have the best of both worlds.")}}>
             ℹ️
           </td>
           <td>
-            Leave course codes in event titles
+            Add course codes to event titles
           </td>
           <td width="40px">
             <div class="toggle-container">
@@ -83,7 +83,7 @@ const CustomizationSection = ({onSetFeatureCodes}) => {
             ℹ️
           </td>
           <td>
-            International Students: add 'check in' link to description
+            International Students: Add 'check in' link to description
           </td>
           <td width="40px">
             <div class="toggle-container">
