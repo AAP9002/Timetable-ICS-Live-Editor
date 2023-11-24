@@ -4,6 +4,7 @@ import beforeImage from './images/Before.jpeg'
 import afterImage from './images/After.jpeg'
 import logo from './images/Logo3.png'
 import ghLogo from './images/github-mark.png'
+import discordLogo from './images/discord-logo.png'
 import settingsIcon from './images/settings icon publish.png'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 import NavBar from './components/NavBar'
@@ -49,6 +50,7 @@ function App() {
     <div className="App">
       <NavBar/>
       <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'10px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
+      <img src={discordLogo} alt='discord logo' style={{position:'absolute', top:'80px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="#social"}}/>
       <img id="logo"src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px'}}/>
       <p>Time table editor designed to change your course codes to the actual course name.</p>
       <p>Available for University Of Manchester, please see <a href='#contribute'>supported courses</a>.</p>
@@ -103,7 +105,7 @@ function App() {
 
       <p>Note: You can change the setup at a later time by removing the calender in your app and completing the set up again.</p>
 
-      <h2 className='mt-5'> STEP 4: Optional</h2>
+      <h2 className='mt-5' id="social"> STEP 4: Optional</h2>
       <p>Join our discord, to make suggestions, be alerted of issues, and receive any important announcements.</p>
       <iframe src="https://discord.com/widget?id=1177617947188011112&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>      <h2 id='contribute' className='mt-5'>Open to contributions</h2>
       <p>PRs are welcome, please feel free to add courses, add a feature or fix a bug</p>
