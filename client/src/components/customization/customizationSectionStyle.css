@@ -1,0 +1,63 @@
+.toggle-container {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+
+  .toggle-input {
+    display: none;
+  }
+
+  .toggle-track {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 17px;
+    transition: background-color 0.3s;
+  }
+
+  .toggle-thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+
+  .toggle-input:checked + .toggle-track {
+    background-color: #4caf50; /* Change the background color when toggled on */
+  }
+
+  .toggle-input:checked + .toggle-track .toggle-thumb {
+    transform: translateX(26px); /* Move the thumb to the right when toggled on */
+  }
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    max-width: 900px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}

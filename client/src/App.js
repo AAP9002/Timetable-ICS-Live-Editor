@@ -1,27 +1,57 @@
 import './App.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import beforeImage from './images/Before.jpeg'
 import afterImage from './images/After.jpeg'
 import logo from './images/Logo3.png'
 import ghLogo from './images/github-mark.png'
+import discordLogo from './images/discord-logo.png'
 import settingsIcon from './images/settings icon publish.png'
 import { AddToCalendarButton } from 'add-to-calendar-button-react';
 import NavBar from './components/NavBar'
+import CustomizationSection from './components/customization/CustomizationSection';
 
 function App() {
   const [uomAPI, setUomAPI] = useState("");
   const[hiddenManual, setHiddenManual] = useState(true);
-  const newIcsUri = "https://tile.alan-p.com/api/v1/" + encodeURIComponent(uomAPI) + "/tt.ics";
+  const [newIcsUri, setNewIcsUri] = useState("");
+  const [featureCodes, setFeatureCodes] = useState("00-02");
+
+
+  function getIds(url){
+    let parts = url.split('/')
+    const letterAndDashRegex = /[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}/i;
+    let matches = [];
+    for(let i of parts){
+      if(letterAndDashRegex.test(i)){
+        matches.push(i)
+      }
+    }
+    return matches;
+  }
+
+  useEffect(()=>{
+    let matches = getIds(uomAPI)
+    //console.log(matches)
+    setHiddenManual(true);
+    setNewIcsUri(`https://tile.alan-p.com/api/v2/${featureCodes}/${matches[0]}/${matches[1]}/tt.ics`);   
+  }, [uomAPI,featureCodes])
 
   const toggleHiddenManual = () => {
     setHiddenManual(!hiddenManual);
   }
 
+  const handleFeatureCodeStateChange = (newState) => {
+    setFeatureCodes(newState);
+  };
+
+  const testUomApiUrlValid= ()=> {return uomAPI.endsWith('.ics') && getIds(uomAPI).length===2}
+
   return (
     <div className="App">
       <NavBar/>
       <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'10px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
-      <img id="logo"src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px'}}/>
+      <img src={discordLogo} alt='discord logo' style={{position:'absolute', top:'80px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="#social"}}/>
+      <img id="logo"src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px',mixBlendMode:'darken'}}/>
       <p>Time table editor designed to change your course codes to the actual course name.</p>
       <p>Available for University Of Manchester, please see <a href='#contribute'>supported courses</a>.</p>
       <div className='d-flex' style={{maxWidth:'800px'}}>
@@ -45,11 +75,15 @@ function App() {
         <li>5 . Click on <b>Copy</b></li>
         <li>6 . Paste the Timetable ICS Link into the box below</li>
       </ol>
-      <input type="text" placeholder="Enter UoM ICS Link" onChange={(e) => {setUomAPI(e.target.value); setHiddenManual(true);}} style={{ minWidth: "80%" }} />
+      <input type="text" placeholder="Enter UoM ICS Link" onChange={(e)=>{setUomAPI(e.target.value)}} style={{ minWidth: "80%" }} />
       <br />
 
-      <h2 className="mt-5"> STEP 2: Add to calender</h2>
-      {uomAPI.endsWith('.ics')?<>
+      <h2 className="mt-5"> STEP 2: Choose features</h2>
+      <p>Select your features to customise your experience.</p>
+      <CustomizationSection onSetFeatureCodes={handleFeatureCodeStateChange}/>      
+
+      <h2 className="mt-5"> STEP 3: Add to calender</h2>
+      {testUomApiUrlValid()?<>
       <p>Select your preferred calender app</p>
         <AddToCalendarButton
           name="Sample Event"
@@ -61,17 +95,19 @@ function App() {
           subscribe
           options="'Apple','Google','iCal','Outlook.com','Yahoo','MicrosoftTeams','Microsoft365'"
         />
-        <btn className="btn btn-link" onClick={toggleHiddenManual}>set up manually</btn>
+        <button className="btn btn-link" onClick={toggleHiddenManual}>set up manually</button>
         </>:<p>Please enter a valid UoM Timetable ICS link in step 1</p>}
+        
         {hiddenManual?null:<>
       <p>Most calendar apps enable you to subscribe using a URL. Copy the URL below and follow your calendar app's subscription instructions.</p>
       <p style={{ fontWeight: "bold", minWidth: "80%", overflowWrap: "anywhere"}}>{newIcsUri}</p>
       </>}
 
-      <h2 className='mt-5'> STEP 3: Optional</h2>
-      <p>Enter your email so we can alert you with any major issues or updates (it will not be used for spam, only when there is a problem with keeping your timetable up to date!)</p>
-      <iframe title='Mailing list' src="https://docs.google.com/forms/d/e/1FAIpQLScIt5gAkHQxIrGUomY-IaFZvG8jFXHk72oTsLY3PsssLbAWLw/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      <h2 id='contribute' className='mt-5'>Open to contributions</h2>
+      <p>Note: You can change the setup at a later time by removing the calender in your app and completing the set up again.</p>
+
+      <h2 className='mt-5' id="social"> STEP 4: Optional</h2>
+      <p>Join our discord, to make suggestions, be alerted of issues, and receive any important announcements.</p>
+      <iframe src="https://discord.com/widget?id=1177617947188011112&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>      <h2 id='contribute' className='mt-5'>Open to contributions</h2>
       <p>PRs are welcome, please feel free to add courses, add a feature or fix a bug</p>
       <p>Github Repo: <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/'>https://github.com/AAP9002/Timetable-ICS-Live-Editor/</a></p>
       <br />

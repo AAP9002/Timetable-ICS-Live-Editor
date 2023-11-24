@@ -29,7 +29,7 @@ const NavBar = () => {
       {menuShow ? <>
         <div className='blur'></div>
         <a href='#logo'>Home</a>
-        <a href='#stepOne'>Steps</a>
+        <a href='#stepOne'>Set Up</a>
         <a href='#contribute'>Contribute</a>
         <a href='#supported'>Supported Courses</a>
       </> : null}
