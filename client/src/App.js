@@ -51,7 +51,7 @@ function App() {
       <NavBar/>
       <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'10px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
       <img src={discordLogo} alt='discord logo' style={{position:'absolute', top:'80px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="#social"}}/>
-      <img id="logo"src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px'}}/>
+      <img id="logo"src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px',mixBlendMode:'darken'}}/>
       <p>Time table editor designed to change your course codes to the actual course name.</p>
       <p>Available for University Of Manchester, please see <a href='#contribute'>supported courses</a>.</p>
       <div className='d-flex' style={{maxWidth:'800px'}}>
