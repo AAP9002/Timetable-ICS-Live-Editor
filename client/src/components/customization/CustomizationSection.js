@@ -37,7 +37,8 @@ const CustomizationSection = ({onSetFeatureCodes}) => {
 
     setResultingConfig(codeParts.join('-'))
     onSetFeatureCodes(codeParts.join('-'))
-  }, [code00state, code01state, code03state])
+    console.log(resultingConfig)
+  }, [code00state, code01state, code03state, onSetFeatureCodes, resultingConfig])
 
 
 

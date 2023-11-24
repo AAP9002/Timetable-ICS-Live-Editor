@@ -32,7 +32,7 @@ function App() {
     let matches = getIds(uomAPI)
     //console.log(matches)
     setHiddenManual(true);
-    setNewIcsUri(`https://tile.alan-p.com/api/v2/${featureCodes}/${matches[0]}/${matches[1]}/tt.ics`);
+    setNewIcsUri(`https://tile.alan-p.com/api/v2/${featureCodes}/${matches[0]}/${matches[1]}/tt.ics`);   
   }, [uomAPI,featureCodes])
 
   const toggleHiddenManual = () => {
@@ -42,6 +42,8 @@ function App() {
   const handleFeatureCodeStateChange = (newState) => {
     setFeatureCodes(newState);
   };
+
+  const testUomApiUrlValid= ()=> {return uomAPI.endsWith('.ics') && getIds(uomAPI).length===2}
 
   return (
     <div className="App">
@@ -79,7 +81,7 @@ function App() {
       <CustomizationSection onSetFeatureCodes={handleFeatureCodeStateChange}/>      
 
       <h2 className="mt-5"> STEP 3: Add to calender</h2>
-      {uomAPI.endsWith('.ics')?<>
+      {testUomApiUrlValid()?<>
       <p>Select your preferred calender app</p>
         <AddToCalendarButton
           name="Sample Event"
