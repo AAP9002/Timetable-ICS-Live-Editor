@@ -1,4 +1,4 @@
-## 1. Implement your feature in its own file in /server/features
+## 1. Implement your feature in its own file in ```/server/features```
 ```js
 // your feature
 // @author : your github username
@@ -19,7 +19,7 @@ module.exports = {
 };
 ```
 
-## 2. Set up your feature in /server/index.js
+## 2. Set up your feature in ```/server/index.js```
 - Import your code within the commented section 'IMPORT FEATURES'
 - Add a switch case for your feature in the performModifications method
 
