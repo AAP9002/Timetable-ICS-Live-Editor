@@ -104,9 +104,8 @@ function App() {
       <p>Note: You can change the setup at a later time by removing the calender in your app and completing the set up again.</p>
 
       <h2 className='mt-5'> STEP 4: Optional</h2>
-      <p>Enter your email so we can alert you with any major issues or updates (it will not be used for spam, only when there is a problem with keeping your timetable up to date!)</p>
-      <iframe title='Mailing list' src="https://docs.google.com/forms/d/e/1FAIpQLScIt5gAkHQxIrGUomY-IaFZvG8jFXHk72oTsLY3PsssLbAWLw/viewform?embedded=true" width="100%" height="500">Loading…</iframe>
-      <h2 id='contribute' className='mt-5'>Open to contributions</h2>
+      <p>Join our discord, to make suggestions, be alerted of issues, and receive any important announcements.</p>
+      <iframe src="https://discord.com/widget?id=1177617947188011112&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>      <h2 id='contribute' className='mt-5'>Open to contributions</h2>
       <p>PRs are welcome, please feel free to add courses, add a feature or fix a bug</p>
       <p>Github Repo: <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/'>https://github.com/AAP9002/Timetable-ICS-Live-Editor/</a></p>
       <br />
