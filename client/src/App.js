@@ -75,14 +75,17 @@ function App() {
         <li>5 . Click on <b>Copy</b></li>
         <li>6 . Paste the Timetable ICS Link into the box below</li>
       </ol>
-      <input type="text" placeholder="Enter UoM ICS Link" onChange={(e)=>{setUomAPI(e.target.value)}} style={{ minWidth: "80%" }} />
+      <label for="icsBox">UoM Timetable ICS Link:</label>
+      <input id="icsBox" type="text" placeholder="Enter UoM ICS Link" onChange={(e)=>{setUomAPI(e.target.value)}} style={{ minWidth: "80%" }} />
       <br />
 
       <h2 className="mt-5"> STEP 2: Choose features</h2>
       <p>Select your features to customise your experience.</p>
-      <CustomizationSection onSetFeatureCodes={handleFeatureCodeStateChange}/>      
+      <CustomizationSection onSetFeatureCodes={handleFeatureCodeStateChange}/>
+      <code>Note: You can change the setup at a later time by removing the calender in your app and completing the set up again.</code>    
 
       <h2 className="mt-5"> STEP 3: Add to calender</h2>
+      <code>Use mobile data if you are on university WI-FI</code>
       {testUomApiUrlValid()?<>
       <p>Select your preferred calender app</p>
         <AddToCalendarButton
@@ -102,9 +105,6 @@ function App() {
       <p>Most calendar apps enable you to subscribe using a URL. Copy the URL below and follow your calendar app's subscription instructions.</p>
       <p style={{ fontWeight: "bold", minWidth: "80%", overflowWrap: "anywhere"}}>{newIcsUri}</p>
       </>}
-
-      <p>Note: You can change the setup at a later time by removing the calender in your app and completing the set up again.</p>
-
       <h2 className='mt-5' id="social"> STEP 4: Optional</h2>
       <p>Join our discord, to make suggestions, be alerted of issues, and receive any important announcements.</p>
       <iframe id="discordWidget" title="Discord Widget" src="https://discord.com/widget?id=1177617947188011112&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>      <h2 id='contribute' className='mt-5'>Open to contributions</h2>
