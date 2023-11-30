@@ -137,6 +137,7 @@ app.get('/api/v2/:steps/:uniqueAPIPart1/:uniqueAPIPart2/tt.ics', function (req, 
   else{
 
     let URL = "https://scientia-eu-v4-api-d3-02.azurewebsites.net//api/ical/" + uniqueAPIPart1 + "/" + uniqueAPIPart2 + "/timetable.ics";
+    console.log(URL);
 
     try {
       getTimetable(URL).then(cal => {
