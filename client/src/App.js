@@ -123,7 +123,7 @@ function App() {
       <a href='https://www.manchester.ac.uk/study/undergraduate/courses/2023/00638/bsc-physics/' target='_blank' rel="noreferrer" >Physics</a>
 
       <footer className='w-100' style={{paddingTop:"30px", paddingBottom:"50px", borderTop:"solid",marginTop:"20px"}}>
-        <p>copyright &#169; 2023 <a href='https://www.linkedin.com/in/alan-prophett/'>Alan Prophett</a></p>
+        <p>copyright &#169; 2023-2024 <a href='https://www.linkedin.com/in/alan-prophett/'>Alan Prophett</a></p>
       </footer>
     </div>
   );
