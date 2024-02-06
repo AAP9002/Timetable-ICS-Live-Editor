@@ -71,6 +71,7 @@ COMP22111 Processor Microarchitecture
 COMP22712 Microcontrollers
 COMP23111 Database Systems
 COMP24011 Introduction to AI
+COMP24112 Machine Learning
 COMP25212 System Architecture
 COMP27112 Introduction to Visual Computing
 COMP28112 Distributed Systems
