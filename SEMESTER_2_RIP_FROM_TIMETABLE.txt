@@ -1,0 +1,1003 @@
+AERO20062 Modelling & Simulation 2
+AERO20400 Aircraft Performance and Design
+AERO30052 Modelling & Simulation 3
+AERO31212 Aerospace Propulsion
+AERO31302 Structures 3 (Aerospace)
+AERO32202 Flight Dynamics
+AERO40122 Advanced Computational Fluid Dynamics
+AERO40492 Autonomus Mobile Robots
+AERO41222 Helicopters
+AERO60122 Advanced Computational Fluid Dynamics
+AERO60492 Autonomus Mobile Robots
+AERO61222 Helicopters
+AHCP22812 The Neo-Avant-Garde and the Crisis of Medium, 1945-1974
+AHCP30012 The English Baroque: Architecture and Society 1660-1730
+AMER10002 From Reconstruction to Reagan: American History, 1877-19
+AMER10312 Twentieth Century American Literature
+AMER20072 American Film Studies
+AMER30022 Slavery & the Old South
+BIOL10212 Biochemistry
+BIOL10232 From Molecules to Cells
+BIOL10412 Introduction to Experimental Biology - Molecular & Cellular
+BIOL10422 Introduction to Experimental Biology - Human Biology
+BIOL10532 Microbes, Humankind and the Environment
+BIOL10822 Drugs:  From Molecules to Man
+BIOL10832 Excitable Cells: the Foundations of Neuroscience
+BIOL21132 Cell Metabolism & Metabolic Control
+BIOL21152 Omic Technologies & Resources
+BIOL21172 Principles of Developmental Biology
+BIOL21192 Principles of Infectious Disease
+BIOL21202 Plants for the Future
+BIOL21232 Fundamentals of Evolutionary Biology
+BIOL21242 Immunology
+BIOL21252 Parasitology
+BIOL21272 Body Systems 2
+BIOL21302 Clinical Drug Development
+BIOL21312 Drugs & the Brain
+BIOL21332 Motor Systems
+BIOL21402 Anatomy of the Special Sense Organs
+BIOL21432 Animal Behaviour
+BIOL21742 Introduction to Cancer
+BIOL22332 Motor Systems for Human Computer Interaction
+BIOL31332 Biochemical Basis of Disease (E)
+BIOL31402 Human Genetics & Evolution (E)
+BIOL31482 Conservation Biology (E)
+BIOL31582 Cardiovascular Systems (E)
+BIOL31602 Toxins, Toxicants & Toxicity (E)
+BIOL31612 Neuroinflammation in Health & Disease (E)
+BIOL31622 Membrane Transport and Signalling in Health & Disease (E)
+BIOL31642 Advanced Developmental Biology (E)
+BIOL31692 Learning, Memory & Cognition (E)
+BIOL31742 Molecular Biology of Cancer (E)
+BIOL31792 Advanced Parasitology (E)
+BIOL31802 Immune Response & Disease (E)
+BIOL31832 Role of Diagnostics in Medicine
+BIOL40102 Anatomical Science - Essay Paper
+BIOL40112 Biochemistry - Essay Paper
+BIOL40122 Biology - Essay Paper
+BIOL40142 Biomedical Sciences - Essay Paper
+BIOL40152 Cell Biology - Essay Paper
+BIOL40172 Genetics - Essay Paper
+BIOL40202 Microbiology - Essay Paper
+BIOL40212 Molecular Biology - Essay Paper
+BIOL40222 Neuroscience - Essay Paper
+BIOL40232 Pharmacology - Essay Paper
+BIOL40242 Pharmacology & Physiology - Essay Paper
+BIOL40252 Physiology - Essay Paper
+BIOL40262 Plant Science - Essay Paper
+BIOL40282 Zoology - Essay Paper
+BIOL40292 Biology with Science & Society - Essay Paper
+BIOL40302 Anatomical Science - Problem Paper
+BIOL40312 Biochemistry - Problem Paper
+BIOL40322 Biology - Problem Paper
+BIOL40342 Biomedical Sciences - Problem Paper
+BIOL40352 Cell Biology - Problem Paper
+BIOL40372 Genetics - Problem Paper
+BIOL40402 Microbiology - Problem Paper
+BIOL40412 Molecular Biology - Problem Paper
+BIOL40422 Neuroscience - Problem Paper
+BIOL40432 Pharmacology - Problem Paper
+BIOL40442 Pharmacology & Physiology - Problem Paper
+BIOL40452 Physiology - Problem Paper
+BIOL40462 Plant Science - Problem Paper
+BIOL40472 Cognitive Neuroscience & Psychology - Problem Paper
+BIOL40482 Zoology - Problem Paper
+BIOL40522 Biotechnology - Essay Paper
+BIOL40592 Biology with Science & Society - Problem Paper
+BIOL40682 Medical Biochemistry - Essay Paper
+BIOL40722 Biotechnology - Problem Paper
+BIOL40822 Developmental Biology - Problem Paper
+BIOL40832 Developmental Biology Essay Paper
+BIOL40862 Immunology Essay Paper
+BIOL40872 Immunology Problem Paper
+BIOL40882 Medical Biochemistry - Problem Paper
+BMAN10512 Introductory Management Accounting
+BMAN10522 Financial Decision Making M
+BMAN10522 Financial Decision Making
+BMAN10552 Fundamentals of Finance
+BMAN10612 Business Economics
+BMAN10632 Fundamentals of Management Accounting M
+BMAN10632 Fundamentals of Management Accounting
+BMAN10750 Quantitative Methods for Accounting and Finance
+BMAN10760 Auditing & Professional Accounting Practice I
+BMAN10872 Introduction to Work Psychology
+BMAN10960 Quantitative Methods for Business and Management
+BMAN11110 Law for Accountants
+BMAN20072 Investment Analysis
+BMAN20242 Introduction to Corporate Finance and Financial Instrument
+BMAN20792 Technology, Strategy and Innovation
+BMAN20832 Marketing
+BMAN21012 Global Contexts of Business and Management
+BMAN21020 Financial Reporting and Accountability
+BMAN21040 Intermediate Management Accounting
+BMAN22000 Firms and Management in Comparative Perspective
+BMAN23000 Foundations of Finance A
+BMAN23000 Foundations of Finance B
+BMAN24042 Business Law 1: Law, Business Liabilities and the Consumer
+BMAN24052 Business Law 2:  Law and the Modern Corporation in an Int
+BMAN24102 Mergers & Acquisitions:  Financial Perspectives
+BMAN24312 International Business
+BMAN24442 Foundations of Strategy and Innovation
+BMAN24582 FinTech, Blockchain and Cryptocurrencies
+BMAN30010 Management of Knowledge and Innovation
+BMAN30030 Contemporary Issues in Financial Reporting and Regulation
+BMAN30042 Human Resource Management
+BMAN30060 International Finance
+BMAN30242 Financial Engineering
+BMAN30702 Corporate Contracting and Managerial Behaviour
+BMAN31040 Advanced Management Accounting
+BMAN31152 Business Decision Analytics
+BMAN31302 Marketing Strategy
+BMAN31312 Services Marketing Management
+BMAN31652 Equality and Fairness at Work
+BMAN31792 Financial Market Microstructure
+BMAN31952 Digital Economy: Platforms, AI and The Business
+BMAN31982 International and Comparative Human Resource Managem
+BMAN31992 International Competitiveness and Innovation
+BMAN32082 Applied Practical Investing
+BMAN60092 Risk, Performance and Decision Analysis
+BMAN60422 Data Analytics for Business Decision Making
+BMAN60992 International Human Resource Management
+BMAN62082 The Management of International Organizational Change
+BMAN63012 Interest Rate Derivatives
+BMAN63012 Interest Rate Derivatives
+BMAN70152 Business to Business Marketing
+BMAN70162 Current Issues in Empirical Finance
+BMAN70222 Employment Law
+BMAN70232 Advanced Management Accounting
+BMAN70292 Global Supply Chain Management: Theories and Practice
+BMAN70402 International Marketing
+BMAN70432 Mergers & Acquisitions: Economic & Financial
+BMAN71122 Time Series Econometrics
+BMAN71132 Financial Statement Analysis
+BMAN71152 Corporate Finance
+BMAN71282 Qualitative Research Methods
+BMAN71572 Credit Risk Measurement and Management
+BMAN71902 Training, Support and Development
+BMAN71942 Innovation Management & Business Strategy
+BMAN71982 Work Design, Performance & Wellbeing
+BMAN72242 Managing People and Organisations
+BMAN72382 Employment Practice and Equality
+BMAN72912 Corporate Governance
+BMAN73112 Innovation Management and Entrepreneurship
+BMAN73122 Comparative Employment Relations and International HRM
+BMAN73672 Supply Chain Logistics Management
+BMAN73842 Elements of Market Based Accounting Research
+BMAN73942 Simulation & Risk Analysis
+BMAN74112 Behavioural Finance
+BMAN74222 Financial Data Analytics & AI in Finance
+CAHE10012 Constructing Archaic Greek History
+CAHE10032 Introduction to Egyptian Hieroglyphs
+CAHE20022 The World of Late Antiquity
+CAHE20052 The Roman Empire 31BC - AD313 Romes Golden Age
+CAHE21012 Greek Tragedy
+CAHE23022 National Identity and the Roman Past
+CAHE30022 The World of Late Antiquity
+CAHE30110 Advanced Latin Language 1
+CAHE30120 Advanced Greek Language 1
+CAHE30162 Intensive Greek 2
+CAHE30182 Intensive Latin 2
+CAHE30210 Advanced Latin Language 2
+CAHE30220 Advanced Greek Language 2
+CAHE30310 Advanced Latin Language 3
+CAHE30882 The Roman Army and the North-West Frontiers
+CAHE31012 Greek Tragedy
+CAHE33022 National Identity and the Roman Past
+CAHE70110 Advanced Latin Language 1
+CAHE70162 Intensive Greek 2
+CAHE70182 Intensive Latin 2
+CAHE70220 Advanced Greek Language 2
+CAHE70320 Advanced Greek Language 3
+CHEM10022 Chemistry for Bioscientists 2
+CHEM10212 Energy and Change
+CHEM10312 Coordination Chemistry
+CHEM10412 Structure and Reactivity
+CHEM20212 Core Physical Chemistry
+CHEM20312 Inorganic Chemistry
+CHEM20412 Structure and reactivity of organic molecules
+CHEM20712 Environmental and Green Chemistry
+CHEM20722 Biomolecular Structure and Function
+CHEM21162 Chemistry of Biomolecules
+CHEM30112 Personalised Learning Unit 2
+CHEM30122 Materials Chemistry
+CHEM30312 Core Chemistry 4
+CHEM30432 Bioorganic and Medicinal Chemistry
+CHEM30442 Synthesis for Drug Discovery and Development
+CHEM30712 Biosynthesis and Bioenergetics
+CHEM30722 Biomolecular Structure and Function 2
+CHEM31312 Core Chemistry 4 (Distance Learning)
+CHEM31812 Chemistry of Biological Processes (E)
+CHEM60112 Advanced Chemistry Topics II
+CHEM60112 Advanced Chemistry Topics II
+CHEM60112 Materials Chemistry
+CHEN10022 Engineering Chemistry
+CHEN10072 Engineering Mathematics 2
+CHEN10092 Process Heat Transfer
+CHEN10162 Engineering Biotechnology
+CHEN10192 Chemical Thermodynamics
+CHEN20072 Distillation & Absorption
+CHEN20082 Process Integration
+CHEN20112 Momentum, Heat & Mass Transfer
+CHEN20152 Process Safety
+CHEN30122 Process Design
+CHEN33122 Process Design BEng
+CHEN40202 Sustainable Energy Systems
+CHEN60202 Oil and Gas Processing
+CHEN60482 Advanced subsurface modelling
+CHEN60492 Properties of subsurface fluids
+CHEN64352 Sustainable Energy Systems
+CHEN64442 Reaction Systems Design
+CHIN10050 Introduction to Chinese Studies
+CHIN28572 Introduction to Classical Chinese
+CHIN32012 Socialism in China
+CHIN38682 Business Chinese
+CHIN51022 Chinese Language 2
+CHIN51042 Chinese Language 4
+CHIN51050 Chinese Language 5
+CHIN51060 Chinese Language 6
+CIVL10152 Materials 1 (Civil)
+CIVL10212 Geotechnics 1
+CIVL10602 Mechanics (Civil)
+CIVL14022 Sustainable & Resilient Infrastructure
+CIVL20152 Materials 2 (Civil)
+CIVL20252 Surveying
+CIVL20322 Steel & Concrete Structures
+CIVL20402 Water Engineering 1
+CIVL30262 Resource Efficiency & Sustainable Waste Management
+CIVL30792 Structural Design & Materials
+CIVL36002 Geotechnics 4
+CIVL40012 Advanced Structural Analysis
+CIVL40402 Water Resource Planning & Management
+CIVL40912 Earthquake Engineering
+CIVL42002 Computational Hydraulics
+CIVL42042 Fire Engineering
+CIVL60012 Advanced Structural Analysis
+CIVL60912 Earthquake Engineering
+CIVL64042 Fire Engineering
+COMP11012 Foundation in Computer Science-Computational Thinking
+COMP11120 Mathematical Techniques for Computer Science
+COMP11212 Fundamentals of Computation
+COMP13212 Data Science
+COMP15212 Operating Systems
+COMP16412 Introduction to Programming 2
+COMP23412 Software Engineering 2
+COMP24112 Machine Learning
+COMP24412 Knowledge Based AI
+COMP25212 System Architecture
+COMP26020 Programming Languages & Paradigms
+COMP26120 Algorithms and Data Structures
+COMP27112 Introduction to Visual Computing
+COMP28112 Distributed Systems
+COMP32412 The Internet of Things:  Architectures and Applications
+COMP33312 Agile Software Pipelines
+COMP34212 Cognitive Robotics
+COMP34312 Mathematical Topics in Machine Learning
+COMP34612 Computational Game Theory
+COMP34812 Natural Language Understanding
+COMP35112 Chip Multiprocessors
+COMP37212 Computer Vision
+COMP38412 Cyber Security
+COMP39112 Quantum Computing
+COMP60332 Automated Reasoning and Verification
+COMP61332 Text Mining
+COMP61342 Cognitive Robotics and Computer Vision
+COMP63342 Software Security
+CRIM30662 Journeys out of Offending
+DATA70132 Statistics & Machine Learning 2
+DENT10340 BDS YEAR 1
+DENT10350 BSc Dental Hygiene and Therapy Year 1
+DENT10350 BSc Dental Hygiene and Therapy Year 1
+DENT21040 BDS YEAR 2
+DENT21040 BDS YEAR 2
+DENT21050 BSc Dental Hygiene & Therapy Year 2
+DENT21050 BSc Dental Hygiene & Therapy Year 2
+DENT31000 BDS YEAR 3
+DENT31000 BDS YEAR 3
+DENT31000 BDS YEAR 3
+DENT41000 BDS YEAR 4
+DENT41000 BDS YEAR 4
+DENT41000 BDS YEAR 4
+DRAM20632 God at the Movies
+EART11100 Understanding the Earth
+EART11100 Understanding the Earth
+EART11200 The Natural Scientists Toolkit
+EART11300 Practical and Professional Skills Development
+EART21102 Environmental Microbiology
+EART21202 Global Climate Change
+EART23202 Interpreting the Stratigraphic Record: From Surface to Subs
+EART24202 Metamorphic Minerals and Processes
+EART28002 Environmental Chemistry 2: Biogeochemical Cycles
+EART28202 Structural Geology
+EART28202 Structural Geology
+EART29102 Geospatial Techniques
+EART31302 Sedimentary Basins and the Source to Sink System
+EART34102 Geoenergy
+EART34302 Volcanology
+EART36002 Climate and Energy: Past, Present and Future
+EART36202 Primate Evolution and Human Origins
+EART37002 Diagenesis of Sedimentary Systems
+EART37202 Remote Sensing of Atmospheres
+EART60152 Computational Subsurface Geoscience
+EART60162 Prospect Evaluation and Petroleum Economics
+EART60572 Subsurfance Mechanics and GeoEngineering
+EART60682 Fluids and Minerals in Subsurface Energy Systems
+EART62022 Pollutant Mobility and Transformation
+EART62022 Pollutant Mobility and Transformation - REMOTE
+EART62022 Pollutant Mobility and Transformation
+EART62022 Pollutant Mobility and Transformation - REMOTE
+EART63012 Pollution Management in Practice 2
+EART63012 Pollution Management in Practice 2
+ECON10002 An Introduction to Development Studies
+ECON10072 Advanced Statistics
+ECON10072 Advanced Statistics
+ECON10162 Applied Economics
+ECON10172 Principles of Microeconomic Theory 2: Markets, Prices and
+ECON10182 Macroeconomic Analysis 2
+ECON10192 Introduction to Mathematical Economics
+ECON10232 Microeconomics 2
+ECON10252 Macroeconomics 1
+ECON10262 Macroeconomics 2
+ECON20022 Microeconomics 4
+ECON20032 Macroeconomics 4
+ECON20072 Advanced Statistics
+ECON20110 Econometrics
+ECON20120 Mathematical Economics I
+ECON20172 Principles of Microeconomic Theory 2: Markets, Prices and
+ECON20182 Macroeconomic Analysis 2
+ECON20192 Introduction to Mathematical Economics
+ECON20222 Quantitative Methods
+ECON20232 Microeconomics 2
+ECON20262 Macroeconomics 2
+ECON20332 Development Economics: Understanding Poverty
+ECON20512 Intermediate Microeconomic Theory 2
+ECON20532 Macroeconomic Analysis 4
+ECON30002 Advanced Macroeconomics
+ECON30022 Microeconomics 4
+ECON30032 Macroeconomics 4
+ECON30042 Topics in Inequality & Poverty
+ECON30102 The Chinese Economy
+ECON30290 Mathematical Economics II
+ECON30320 Mathematical Economics I
+ECON30342 Micro Econometrics
+ECON30370 Econometrics
+ECON30382 Mathematical Finance
+ECON30432 Financial Economics
+ECON30852 Money, Banking & Financial Markets
+ECON31002 Managerial Economics II
+ECON32202 Health Economics
+ECON32242 Topics in Labour Economics
+ECON32252 Econometrics and Data Science
+ECON33032 Topics in Education Economics
+ECON60022 Development Microeconomics
+ECON60052 Microeconometrics
+ECON60132 International Macroeconomics
+ECON60212 Poverty, Inequality and Government Policy in Less Develope
+ECON60332 Financial Econometrics
+ECON60432 Healthcare Economics
+ECON60482 Topics in Applied Economics
+ECON60492 Political Economics
+ECON60522 Applied Macroeconometrics
+ECON60562 Mathematical Economics
+ECON60622 Further Econometrics
+ECON60662 Economic Growth
+ECON60782 Economics of Environmental Policy
+ECON60822 Labour Economics
+ECON61212 Advanced Topics in Development Economics
+ECON61262 Financial Economics II
+EDUC20282 Leadership
+EDUC20262 Financial Management II
+EEEN10202 Microcontroller Engineering I
+EEEN10212 Energy Transport and Conversion
+EEEN10222 Electromagnetic Fields
+EEEN10232 Electronic Circuit Design I
+EEEN10242 C Programming
+EEEN10492 Electrical Engineering Fundamentals
+EEEN20212 Machines, Drives & Power Electronics
+EEEN20222 Electronic Circuit Design II
+EEEN20232 Microelectronic Components
+EEEN20242 Generation and Transport of Electrical Energy
+EEEN20252 Control Systems I
+EEEN20262 Analogue and Digital Communications
+EEEN20272 VLSI Design
+EEEN20282 Applied Mechanics & Industrial Robotics
+EEEN30072 Mobile Robots and Autonomous Systems
+EEEN30212 Transmissions Lines & Optical Fibres
+EEEN30222 Computer Systems Architecture
+EEEN30232 Control Systems II
+EEEN30242 Sensors & Instrumentation
+EEEN30252 Power System Plant & Protection
+EEEN30262 Electrical Drive Systems
+EEEN30272 Current Trends in Optical Devices
+EEEN40162 Wireless Communication & Mobile Networks
+EEEN40412 Nanoelectronic Devices and Nanomaterials
+EEEN42012 Robotic Manipulators
+EEEN44422 Power System Protection
+EEEN44442 Multi-Sensor Signal Processing & Imaging
+EEEN60122 Applied Control and Autonomous Systems
+EEEN60162 Wireless Communications & Mobile Networks
+EEEN60252 Nonlinear and Adaptive Control Systems
+EEEN60262 Optimal & Robust Control
+EEEN60342 Power System Dynamics & Quality of Supply
+EEEN60352 Smart Grids & Sustainable Electricity Systems
+EEEN60402 Interfacing clean energy systems
+EEEN60422 Zero Carbon Built Infrastructure
+EEEN60472 Applied Digital Signal Processing
+EEEN60482 Networks and Internet of Things
+EEEN60492 Optical Communication Systems and Networks
+EEEN62012 Robotic Manipulators
+EEEN64422 Power System Protection
+EEEN64442 Multi-Sensor Signal Processing & Imaging
+ENGL10072 Literature and History
+ENGL20492 Writing, Identity and Nation
+ENGL22102 Victorian Rights: Victorian Wrongs
+ENGL31202 Eros: Love and Desire in Victorian Poetry
+ENGL31622 Things that Talk
+ENGM40032 Risk Management
+ENGM60032 Risk Management
+ENGM62012 Project Planning and Control
+FOUN10042 Chemistry 2
+FOUN10052 Chemistry 3
+FOUN10072 Waves and Particles Phys 3
+FREN20682 Temptations of the Tragic
+FREN51022 French Language 2
+FREN51030 French Language 3
+FREN51040 French Language 4
+FREN51050 French Language 5
+FREN51060 French Language 6
+FREN51060 French Language 6
+GEOG10402 The Human Planet
+GEOG10422 Dynamic Earth
+GEOG10432 Introducing Human Geographies 2
+GEOG10442 Ice Age Britain
+GEOG20352 Glaciers
+GEOG21242 Nature, Society and Social Power
+GEOG21432 Moral Geographies
+GEOG21512 Geomorphology
+GEOG30132 Mediterranean Quaternary Landscapes
+GEOG31072 Asian Workers and the Labour of Globalisation
+GEOG32012 Pyrogeography: Fire in the Earth System
+GEOG32032 Migration, Conflict and Social Change
+GEOG32042 Global Urban Futures
+GERM10040 Introduction to German Linguistics
+GERM30482 Screening the Holocaust
+GERM30722 Culture and Society in Germany 1871-1918
+GERM51022 German Language 2
+GERM51030 German Language 3
+GERM51040 German Language 4
+GERM51050 German Language 5
+HIST10182 Capitalism in Historical Perspective: 1700-1913
+HIST21202 Capitalism in Historical Perspective: 1700-1913
+HIST30622 Empire, Gender and British Heroes, c.1885 - 1985
+HSTM10272 Bodies in History
+HSTM10772 Bodies in History
+IIDS67432 Advanced Positron Emission Tomography & Magnetic Reso
+IIDS67452 Quantitative Imaging into Practice
+IIDS67462 Mathematical Computing for Medical Imaging
+IIDS67472 Imaging in Clinical Diagnosis
+IIDS68112 Design and Analysis of Randomised Controlled Trials
+ITAL51022 Italian Language 2
+ITAL51030 Italian Language 3
+ITAL51040 Italian Language 4
+ITAL51050 Italian Language 5
+ITAL51060 Italian Language 6
+JAPA32000 Advanced Readings in Japanese Studies
+JAPA33082 Buddhism in Japan
+JAPA51022 Japanese Language 2
+JAPA51042 Japanese Language 4
+JAPA51050 Japanese Language 5
+JAPA51060 Japanese Language 6
+LAWS10082 Criminal Law (Humanities)
+LAWS10082 Criminal Law (Humanities)
+LAWS10210 Contract Law
+LAWS10530 Public Law
+LAWS10640 Obligations I & 2
+LAWS20250 Land Law
+LAWS20530 Public Law
+LAWS20760 Law of Torts/ Law of Obligations II
+LAWS20900 European Union Law
+LAWS23050 Principles and Practice of Commercial law
+LAWS30052 Principles of Commercial Law
+LAWS30252 Constitutional Reform
+LAWS30272 Employment Law
+LAWS30322 Intellectual Property Law
+LAWS30330 Property Law II
+LAWS30372 Public International Law
+LAWS30400 Law of Torts / Obligations II
+LAWS30732 Principles of Law, Medicine and Ethics
+LAWS30990 European Union Law
+LAWS31062 Miscarriages of Justice
+LAWS60172 Postgraduate Competition Law in an International Context
+LAWS70292 Copyright Law and Policy
+LAWS70352 The Regulation of International Finance
+LAWS70362 The Principles and Practice of Corporate Governance
+LAWS72042 International Investment Law
+LAWS77082 International Commercial Arbitration and Mediation Law
+LELA10322 The Sounds of Language
+LELA10332 Study of Meaning
+LELA10342 History and Varieties of English
+LELA20012 Phonology
+LELA20022 Analysing Grammar
+LELA20032 Typology
+LELA20402 The Changing English Language
+LELA20502 Variationist Sociolinguistics
+LELA20962 Psycholinguistics
+LELA21512 Stylistics of English
+LELA30182 Cognitive Linguistics
+LELA30672 Topics in Language Development
+LELA30962 Historical Syntax
+LELA31632 Forensic Linguistics
+LELA70232 The Sociolinguistics of English
+MATH11022 Linear Algebra
+MATH11112 Real Analysis
+MATH11412 Introduction to Ordinary Differential Equations
+MATH11422 ODEs and Applications
+MATH11712 Statistics I
+MATH19662 Mathematics 1M2
+MATH19682 Mathematics 1E2
+MATH19732 Mathematics 1G2
+MATH19812 Mathematics 0B2
+MATH19832 Mathematics 0C2
+MATH19842 Mathematics 0F2
+MATH19852 Mathematics 0J2
+MATH19872 Mathematics 0D2
+MATH20062 Mathematical Communication and Group Projects
+MATH20132 Calculus of Several Variables
+MATH20212 Algebraic Structures 2
+MATH20712 Random Models
+MATH20722 Foundations of Modern Probability
+MATH20802 Statistical Methods
+MATH20902 Discrete Mathematics
+MATH20912 Introduction to Financial Mathematics
+MATH20962 Contingencies 1 - Actuarial Science
+MATH20972 Actuarial Insurance
+MATH21112 Rings & Fields
+MATH21120 Groups and Geometry
+MATH24412 Fluid Mechanics
+MATH24420 Partial Differential Equations & Vector Calculus
+MATH24420 Partial Differential Equations & Vector Calculus
+MATH27712 Stochastic Processes
+MATH27720 Probability and Statistics 2
+MATH31002 Linear Analysis
+MATH31042 Fractal Geometry
+MATH32012 Commutative Algebra
+MATH32052 Hyperbolic Geometry
+MATH32062 Algebraic Geometry
+MATH32072 Number Theory
+MATH35002 Viscous Fluid Flow
+MATH35012 Wave Motion
+MATH35082 Symmetry in Geometry and Nature
+MATH36022 Numerical Analysis 2
+MATH36062 Convex Optimization
+MATH37012 Markov Processes
+MATH38032 Time Series Analysis
+MATH38072 Medical Statistics
+MATH38172 Generalised Linear Models
+MATH39032 Mathematical Modelling in Finance
+MATH39512 Survival Analysis for Actuarial Science
+MATH39522 Contingencies 2
+MATH39542 Risk Theory
+MATH41072 Algebraic Topology
+MATH42042 Noncommutative Algebra
+MATH42112 Lie Algebras
+MATH42132 Algebraic Number Theory
+MATH43022 Set Theory
+MATH45032 Stability Theory
+MATH45062 Continuum Mechanics
+MATH45122 Transport Phenomena and Conservation Laws
+MATH46052 Approximation Theory and Finite Element Analysis
+MATH47112 Brownian Motion
+MATH48032 Time Series Analysis and Financial Forecasting
+MATH48052 Generalised Linear Models and Survival Analysis
+MATH48082 Design and Analysis of Experiments
+MATH48122 Markov Chain Monte Carlo
+MATH48132 Longitudinal Data Analysis
+MATH49102 Stochastic Modelling in Finance
+MATH61072 Algebraic Topology
+MATH62042 Noncommutative Algebra
+MATH62112 Lie Algebras
+MATH62132 Algebraic Number Theory
+MATH63022 Set Theory
+MATH64082 Advanced Uncertainty Quantification
+MATH65122 Transport Phenomena and Conservation Laws
+MATH66052 Approximation Theory and Finite Element Analysis
+MATH67112 Brownian Motion
+MATH68032 Time Series Analysis and Forecasting in Finance
+MATH68052 Generalised Linear Models and Survival Analysis
+MATH68082 Design and Analysis of Experiments
+MATH68122 Markov Chain Monte Carlo
+MATH68132 Longitudinal Data Analysis
+MATH69102 Stochastic Modelling in Finance
+MATH69122 Stochastic Control with Applications to Finance
+MATH69542 Risk Theory
+MATS11402 Fashion Marketing
+MATS11502 Fashion Function and Aesthetics
+MATS16102 Mechanical Behaviour
+MATS16202 Structure of Solids
+MATS16302 Functional Properties
+MATS20422 Fashion Buying & Merchandising
+MATS21902 Fashion Brand Promotion
+MATS22002 Fashion Business & Analysis
+MATS22102 Fashion Management
+MATS22302 International Business
+MATS22702 Sustainable Sourcing and Distribution
+MATS22802 Fabric Structures & Colouration
+MATS22902 Fibre, Yarn & Fabric Technology
+MATS23502 Deformation Mechanisms
+MATS23602 Functional Behaviour
+MATS24102 Engineering Alloys in Service
+MATS24112 Performance Polymers, Fibres and Textiles
+MATS31802 Drug Delivery & Biosensors
+MATS31902 Polymer Synthesis & Characterisation
+MATS32102 Metallurgy of Engineering Alloys
+MATS32202 Corrosion Science & Engineering
+MATS32302 Stem Cell & Tissue Engineering
+MATS32402 Multiphase Polymers & Nanocomposites
+MATS32602 Textile Manufacturing Techniques
+MATS32702 Nanotechnology
+MATS34502 Business Ethics Sustainability & CSR
+MATS42402 Natural Materials & Biological Matrices
+MATS42602 Soft Matter
+MATS42702 Control & Design of Polymerisation Reactions
+MATS42802 Polymer Physics & Physical Properties
+MATS43102 Advanced Metals Processing
+MATS43202 Superalloys & High Performance Materials
+MATS43402 Corrosion Management for Sustainability
+MATS43502 Corrosion Control for Industrial Practice
+MATS43602 Corrosion Control for Oilfield and Renewable Energy
+MATS43702 Advanced Textile Technology
+MATS43802 Textiles Evaluation & Clothing
+MATS43902 Technical & Biomedical Textiles
+MATS44102 Advanced Composites
+MATS44202 Graphene & Nanomaterials
+MATS44302 Applied Functional Materials & Devices
+MATS61472 Fashion Marketing Communications
+MATS61482 Omnichannel Retailing
+MATS64402 Advanced Metals Processing
+MATS64502 Superalloys & High Performance Materials
+MATS64602 Advanced Composites
+MATS64702 Applied Functional Materials & Devices
+MATS64802 Graphene & Nanomaterials
+MATS65402 Natural Materials & Biological Matrices
+MATS65602 Soft Matter
+MATS66402 Corrosion Management for Sustainability
+MATS66502 Corrosion Control for Industrial Practice
+MATS66602 Corrosion Control for Oilfield and Renewable Energy
+MATS68502 Control & Design of Polymerisation Reactions
+MATS68602 Polymer Physics & Physical Properties
+MATS69402 Advanced Textile Technology
+MATS69502 Textiles Evaluation & Clothing
+MATS69602 Technical & Biomedical Textiles
+MCEL30002 Tools & Techniques for Enterprise
+MECH10002 Materials 1 (Aerospace)
+MECH11012 Manufacturing Engineering 1 (Mechanical)
+MECH11122 Manufacturing Engineering 1 (Aerospace)
+MECH11602 Mechanics (Mechanical)
+MECH11622 Mechanics (Aerospace)
+MECH12002 Materials 1 (Mechanical)
+MECH12012 Aerospace and Mechanical Thermodynamics
+MECH20042 Numerical Methods & Computing (Mechanical)
+MECH20422 Applied Thermodynamics (Mechanical)
+MECH20432 Applied Thermodynamics (Aerospace)
+MECH20442 Dynamics
+MECH20542 Numerical Methods & Computing (Aerospace)
+MECH21342 Data Acquisition & Experimental Methods (Mech)
+MECH22202 Materials 2
+MECH30432 Heat Transfer
+MECH30632 Nuclear Systems
+MECH31422 Fluid Mechanics
+MECH31532 Renewable Energy Systems
+MECH31642 Reactor Systems
+MECH32002 Structures 3 (Mechanical)
+MECH32102 Engineering Thermodynamics
+MECH40102 Composites and Polymers
+MECH40132 Advanced Manufacturing Processes
+MECH40362 Additive Manufacturing & 3D Product Modelling
+MECH40442 Acoustics & Advanced Vibrations
+MECH40562 Advanced Power
+MECH41032 Robotics, Metrology and Bioengineering
+MECH43002 Structural Integrity
+MECH60102 Composites and Polymers
+MECH60132 Advanced Manufacturing Processes
+MECH60362 Additive Manufacturing & 3D Product Modelling
+MECH60442 Acoustics & Advanced Vibrations
+MECH60562 Advanced Power
+MECH61022 Heat Transfer
+MECH61032 Robotics, Metrology and Bioengineering
+MECH61042 Advanced Engineering Fluid Mechanics
+MECH63002 Structural Integrity
+MECH68062 Auditing Asset Management & Maintenance Organisations
+MECH68072 Reliability, Maintainability & Risk DL
+MECH69022 Safety, Legislation & Cost Effectiveness
+MECH69032 Asset Maintenance Systems
+MECH69062 Auditing Asset Management & Maintenance Organisations
+MECH69072 Reliability, Maintainability & Risk
+MEDN10000 Semester 2 - Progress Test
+MEDN10000 Semester 2 Test
+MEDN10000 Semester 2 CCA Day 1
+MEDN10000 Semester 2 CCA Day 2
+MEDN10350 Foundation Programmes - Biomedicine
+MEDN10350 Foundation Programmes - Chemistry
+MEDN20000 Semester 2 - Progress Test
+MEDN20000 Semester 2 Test
+MEDN20000 Semester 2 CCA
+MEDN30010 Semester 2 - Progress Test
+MEDN30010 Semester 2 - PT Extra Questions
+MEDN30072 Semester 2 - Progress Test (Preston)
+MEDN30072 Semester 2 - PT Extra Questions (Preston)
+MEDN40010 Semester 2 - Progress Test
+MEDN40010 Semester 2 - PT Extra  Questions
+MEDN40072 Semester 2 - Progress Test (Preston)
+MEDN40072 Semester 2 - PT Extra Questions (Preston)
+MEST20352 The Politics of Women and Gender in the Middle East and N
+MEST30122 Nature, the Environment and Politics in Modern Arabic Lite
+MEST30182 Media and Business Arabic
+MEST51022 Arabic Language 2
+MEST51042 Arabic Language 4
+MEST51050 Arabic Language 5
+MGDI60202 Gender Inequality: Theory and Evidence
+MGDI60462 Economic Analysis of Social Norms and Development
+MGDI60542 Global Health Inequalities
+MGDI70992 Planning and Managing Development
+MGDI71432 Risk Management
+MUSC10022 Tonality: Theory and Analysis
+MUSC10112 Techniques of Tonal Harmony
+MUSC10512 Music and Its Contexts
+MUSC20932 Early Opera
+MUSC30510 Advanced study in Musicology A
+MUSC30520 Advanced Study in Musicology B (40)
+MUSC30932 Early Opera
+NURS14112 Foundations of Midwifery Practice: Microbiology and Pharm
+NURS24100 Midwifery Practice 2
+OPTO10190 Optometric Examination A
+OPTO10292 Dispensing A
+OPTO10312 Physical Optics
+OPTO10362 Visual Neurophysiology & Fundamentals of Visual Perceptio
+OPTO10392 Anatomy and Physiology 2: Exam 2 - Bones, Joints & the Mo
+OPTO20080 Dispensing B
+OPTO20100 Optometric Examination B
+OPTO20292 Visual Optics
+OPTO20372 Contact Lenses A
+OPTO20612 Pharmacology B
+OPTO30282 Vision in the Real World
+OPTO30362 IOVS Glaucoma
+OPTO30410 Low Vision
+OPTO30612 Pharmacology B: Ocular Pharmacology
+OPTO70322 Genetics of the Eye
+OPTO70352 Clinical Science of Contemporary Contact Lenses
+OPTO70362 Glaucoma
+OPTO70422 Refractive Management
+OPTO71360 Professional Certificate in Glaucoma
+PCHN10070 Introduction to Audiology
+PCHN10212 Anatomy and Physiology for Healthcare Professionals 2: Exa
+PCHN10222 Linguistics, Phonetics and Language Development B
+PCHN10320 Biomedical Sciences
+PCHN21200 Hearing Aids
+PCHN62101 Neuroimaging Techniques - Resit
+PCHN62121 Image Analysis - Resit
+PCHN62141 Functional Neuroanatomy - Resit
+PHAR10102 Properties of Medicines
+PHAR11002 GI System, Liver & Kidneys Integrated Exam AM
+PHAR11002 GI System, Liver & Kidneys Integrated Exam PM
+PHAR20302 The Big Killers
+PHAR22001 Immunity, Infection & Resp - Calculations Resit Exam
+PHAR22002 Cardiovascular System - Integrated Exam AM
+PHAR22002 Cardiovascular System - Integrated Exam PM
+PHAR33001 Endocrine & Musculoskeletal - Calculations Resit Exam
+PHAR33002 Brain and Neurotransmission - Integrated Exam AM
+PHAR33002 Brain and Neurotransmission - Integrated Exam PM
+PHAR40202 The Pharmacist (Year 4): Preparation for Professional Practi
+PHAR40300 The Patient (Year 4) - MCQ Exam
+PHAR63002 Evidence Based Practice
+PHAR63012 Medicines Optimisation and Therapeutics 2
+PHAR69923 Data Analysis in Pharmacokinetics and Pharmacodynamics
+PHAR69932 PBPK and IVIVE 2 Advanced Concepts and Applications
+PHIL20021 Philosophy of Religion (AY 22/23 Syllabus)
+PHIL20042 Philosophy of Race
+PHIL20142 Formal Logic (AY 22/23 Syllabus)
+PHIL20242 20th Century Analytical Philosophy
+PHIL20272 Philosophy of Mind
+PHIL23022 Hegel and Marx
+PHIL30331 Issues in Epistemology
+PHIL30621 Advanced Topics in Aesthetics
+PHIL30842 Metaethics and Religious Language
+PHYS10302 Vibrations & Waves
+PHYS10342 Electricity & Magnetism
+PHYS10372 Mathematics 2
+PHYS10622 Physics of Energy Sources
+PHYS10672 Advanced Dynamics
+PHYS10692 Physics of the Solar System
+PHYS10792 Introduction to Data Science
+PHYS20252 Fundamentals of Solid State Physics
+PHYS20312 Wave Optics
+PHYS20352 Statistical Mechanics
+PHYS20612 Introduction to Photonics
+PHYS20672 Complex Variables and Vector Spaces
+PHYS20792 Exoplanets
+PHYS30302 General Physics Skills
+PHYS30392 Cosmology
+PHYS30632 Physics of Medical Imaging
+PHYS30652 Physics of Fluids
+PHYS30692 Stars and Stellar Evolution
+PHYS30732 Physics of Living Processes
+PHYS40202 Advanced Quantum Mechanics
+PHYS40222 Particle Physics
+PHYS40322 Nuclear Physics
+PHYS40422 Applied Nuclear Physics
+PHYS40622 Nuclear Forces and Reactions
+PHYS40642 Atomic Physics
+PHYS40672 Mathematical Methods for Physics
+PHYS40682 Gauge Theories (M)
+PHYS40712 Semiconductor Quantum Structures
+PHYS40722 Frontiers of Particle Physics II
+PHYS40732 Biomaterials/Biophysics
+PHYS40752 Soft Matter Physics
+PHYS40772 Early Universe
+PHYS40992 Galaxy Formation
+PHYS41702 Physics and Reality
+PHYS63392 Cosmology
+PHYS64642 Atomic Physics
+PHYS64682 Gauge Theories (M)
+PHYS64722 Frontiers of Particle Physics II
+PHYS64732 Biomaterials Physics
+PHYS64992 Galaxy Formation
+PLAN10352 Introduction to Urban and Environmental Economics
+PLAN10362 Rural Planning
+PLAN10502 Introduction to Ecology and Conservation
+PLAN20062 Landscape Ecology
+PLAN30072 Planning & Property Law
+PLAN30852 Green Infrastructure and Sustainable Cities
+PLAN40852 Green Infrastructure and Sustainable Cities
+PLAN60852 Green Infrastructure and Sustainable Cities
+POLI10502 Politics of the Global Economy
+POLI10702 Introduction to Political Theory
+POLI20602 Arguing About Politics: Political Theory in the World
+POLI20802 The Politics of Policy Making
+POLI21012 Southern European Politics
+POLI30032 The Politics of the European Union
+POLI30292 Public Policy Problems
+PSYC10100 Research Methods & Statistics
+PSYC11212 Brain & Behaviour
+PSYC11312 Sensation & Perception
+PSYC11412 Foundations in Mental Health & Distress
+PSYC21012 Perception and Action
+PSYC21012 Perception and Action
+PSYC21022 Cognitive Neuroscience
+PSYC21032 Interventions to Improve Mental Health and Wellbeing
+PSYC21042 Personality and Individual Differences
+PSYC21042 Personality and Individual Differences
+PSYC21112 Perception and Action
+PSYC21122 Cognitive Neuroscience
+PSYC31222 Clinical Psychology
+PSYC31232 Communication in Healthcare
+PSYC31242 Understanding Dementia:  Brain and Behaviour
+PSYC32002 Psychology of Music
+PSYC32242 Psychology of Politics, Identity and Society
+PSYC32322 Perception - From Lab to Life
+PSYC33022 Psychology in the Real World
+RELT10120 New Testament Greek
+RELT10242 Religion, Ethics and the Environment
+RELT10712 Bible in Ancient and Modern Worlds
+RELT20140 Biblical Hebrew
+RELT20150 New Testament in Greek II
+RELT20632 God at the Movies
+RELT21082 End of the World and Apocalypticism
+RELT30332 Holocaust Theology and Ethics
+RELT31142 Making Sense of Christ
+RELT70140 Biblical Hebrew: Beginners
+RELT70210 New Testament Greek: Beginners
+SALC10042 Rococo to Now: Artworks in History
+SALC11002 Introduction to World Cinema
+SOAN10312 Cultural Diversity in Global Perspective
+SOAN20830 Anthropological Theory
+SOCY10202 Environment and Society
+SOCY10402 Inequalities in Contemporary British Society
+SOCY10432 Contemporary Social Thought
+SOCY10912 Work, Organisations and Society
+SOCY20032 Work, Economy and Society
+SOCY20272 Global Migration
+SOCY20412 Youth, Politics & Activism in Contemporary Europe
+SOCY20602 Social Class and Inequality in Britain
+SOCY20892 Gender, Sexuality and Culture (2022/23 Syllabus)
+SOCY20961 Racism and Ethnicity in the UK
+SOCY30042 Sociology of Human-Animal Relations
+SOCY30242 A Sense of Inequality
+SOST10062 Introductory Statistics for Economists
+SOST20042 Market Research
+SOST30012 Theory & Method in Demography
+SPLA10130 Introduction to the Cultures of the Lusophone World
+SPLA20142 Empire and it's Aftermath
+SPLA20772 Spanish Linguistics
+SPLA30642 Social Issues in Portuguese and Spanish Film
+SPLA31142 Memory and Culture in Post-Franco Spain
+SPLA31152 History of the Spanish Atlantic World: Empire, Trade, War
+SPLA51022 Spanish Language 2
+SPLA51030 Spanish Language 3
+SPLA51040 Spanish Language 4
+SPLA51050 Spanish Language 5
+SPLA51060 Spanish Language 6
+SPLA52010 Portuguese Language 1
+SPLA52020 Portuguese Language 2
+SPLA52030 Portuguese Language 3
+SPLA52050 Portuguese Language 5
+SPLA53010 Catalan Language & Culture 1
+SPLA53020 Catalan Language & Culture 2
+UCIL20882 Current Topics in Biology
+UCIL20892 Current Topics in Biology
+ULAR50002 Introduction to Arabic NC
+ULAR50010 LEAP Arabic 1 (A1) Non-assessed
+ULAR50020 LEAP Arabic 2 (A1/A2) Non-assessed
+ULAR50030 LEAP Arabic 3 (A2/B1) Non-assessed
+ULAR51002 Introduction to LEAP Arabic (A1.1)
+ULAR51010 LEAP Arabic 1 (A1)
+ULAR51020 LEAP Arabic 2 (A1/A2)
+ULAR51030 LEAP Arabic 3 (A2/B1)
+ULCH50010 LEAP Chinese 1 (A1) Non-assessed
+ULCH51002 LEAP Introduction to Chinese (A1.1)
+ULCH51010 LEAP Chinese 1 (A1)
+ULCH51020 LEAP Chinese 2 (A2)
+ULFR50002 LEAP Introduction to French (A1.1) Non-assessed
+ULFR50010 LEAP French 1 (A1/A2) Non-assessed
+ULFR50020 LEAP French 2 (A2) Non-assessed
+ULFR50030 LEAP French 3 (B1) Non-assessed
+ULFR50040 LEAP French 4 (B1/B2) Non-assessed
+ULFR50050 LEAP French 5 (B2/C1) Non-assessed
+ULFR50060 LEAP French 6 (C1+) Non-assessed
+ULFR51002 LEAP Introduction to French (A1.1)
+ULFR51010 LEAP French 1 (A1/A2)
+ULFR51020 LEAP French 2 (A2)
+ULFR51030 LEAP French 3 (B1)
+ULFR51040 LEAP French 4 (B1/B2)
+ULFR51050 LEAP French 5 (B2/C1)
+ULFR51060 LEAP French 6 (C1+)
+ULGE50002 LEAP Introduction to German
+ULGE50010 LEAP German 1
+ULGE50020 LEAP German 2 (NC)
+ULGE50030 LEAP German 3
+ULGE50040 LEAP German 4
+ULGE50050 LEAP German 5 non-assessed
+ULGE51002 LEAP Introduction to German (A1.1)
+ULGE51010 LEAP German 1 (A1/A2)
+ULGE51020 LEAP German 2 (A2)
+ULGE51030 LEAP German 3 (B1)
+ULGE51040 LEAP German 4 (B1/B2)
+ULGE51050 LEAP German 5 (B2/C1)
+ULGE51060 LEAP German 6 (C1+)
+ULIT51010 LEAP Italian 1 (A1/A2)
+ULJA50010 LEAP Japanese 1
+ULJA50020 LEAP Japanese 2
+ULJA50030 LEAP Japanese 3
+ULJA50040 LEAPJapanese 4 NC
+ULJA51002 LEAP Introduction to Japanese (A1.1)
+ULJA51010 LEAP Japanese 1 (A1)
+ULJA51020 LEAP Japanese 2 (A1/A2)
+ULJA51030 LEAP Japanese 3 (A2/B1)
+ULJA51040 LEAP Japanese 4 (B1)
+ULKR50010 LEAP Korean 1
+ULKR51010 LEAP Korean 1 (A1)
+ULKR51020 LEAP Korean 2 (A2)
+ULPE50010 LEAP Persian 1
+ULPE51010 LEAP Persian 1 (A1)
+ULPL50020 LEAP Polish 2
+ULPL51010 LEAP Polish 1 (A1)
+ULPL51020 LEAP Polish 2 (A2)
+ULPL51030 LEAP Polish 3 (A2/B1)
+ULRU50010 LEAP Russian 1
+ULRU50020 LEAP Russian 2
+ULRU51010 LEAP Russian 1 (A1)
+ULRU51020 LEAP Russian 2 (A2)
+ULSP50002 LEAP Introduction Spanish NC
+ULSP50010 LEAP Spanish 1
+ULSP50020 LEAP Spanish 2
+ULSP50030 LEAP Spanish 3
+ULSP50040 LEAP Spanish 4
+ULSP50050 LEAP Spanish 5
+ULSP50060 LEAP Spanish 6 (NC)
+ULSP51002 LEAP Introduction to Spanish (A1.1)
+ULSP51010 LEAP Spanish 1 (A1/A2)
+ULSP51020 LEAP Spanish 2 (A2)
+ULSP51030 LEAP Spanish 3 (B1)
+ULSP51040 LEAP Spanish 4 (B1/B2)
+ULSP51050 LEAP Spanish 5 (B2/C1)
+ULSP51060 LEAP Spanish 6 (C1+)
+ULTU51010 LEAP Turkish 1 (A1)
+ULUR51010 LEAP Urdu 1 (A1)
