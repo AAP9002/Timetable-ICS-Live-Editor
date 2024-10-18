@@ -49,13 +49,13 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <div className='w-100 bg-danger text-white'>
+      <div className='w-100 bg-danger text-white' style={{marginTop:"80px"}}>
         <hr/>
         <b>Discontinued 30 Oct 2024 - Thank you for using T-I-L-E!</b>
         <hr/>
         </div>
-      <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'100px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
-      <img src={discordLogo} alt='discord logo' style={{position:'absolute', top:'180px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="#social"}}/>
+      <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'180px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
+      <img src={discordLogo} alt='discord logo' style={{position:'absolute', top:'260px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="#social"}}/>
       <img id="logo"src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px',mixBlendMode:'darken'}}/>
       <p>Time table editor designed to change your course codes to the actual course name.</p>
       <p>Available for University Of Manchester, please see <a href='#contribute'>supported courses</a>.</p>
