@@ -51,7 +51,9 @@ function App() {
       <NavBar/>
       <div className='w-100 bg-danger text-white' style={{marginTop:"80px"}}>
         <hr/>
-        <b>Discontinued 30 Oct 2024 - Thank you for using T-I-L-E!</b>
+        <b>Discontinued 30 Oct 2024
+          <br/>
+          Thank you for using T-I-L-E!</b>
         <hr/>
         </div>
       <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'180px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
