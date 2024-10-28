@@ -96,7 +96,7 @@ function App() {
         <li>6 . Paste the Timetable ICS Link into the box below</li>
       </ol>
 
-      <b className='text-danger'>Set up disabled - <a href="#discontinued">more info</a></b>
+      <b className='text-danger'>Set up disabled - <a href="#discontinued" rel="noreferrer" >more info</a></b>
       <label for="icsBox">UoM Timetable ICS Link:</label>
       <input id="icsBox" type="text" placeholder="Enter UoM ICS Link" onChange={(e)=>{setUomAPI(e.target.value)}} style={{ minWidth: "80%" }} disabled/>
       <br />
