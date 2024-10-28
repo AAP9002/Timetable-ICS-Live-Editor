@@ -57,7 +57,7 @@ function App() {
         <hr/>
             Due to server and domain costs, I have decided to discontinue <b>T-I-L-E</b>.
             <br/>
-            ⚠️ Please set up your 📆 <a href='https://timetables.manchester.ac.uk/timetables' target='_blank' className='text-white'>official UoM timetable</a> to maintain access to your events. ⚠️
+            ⚠️ Please set up your 📆 <a href='https://timetables.manchester.ac.uk/timetables' target='_blank' className='text-white' rel="noreferrer">official UoM timetable</a> to maintain access to your events. ⚠️
             <br/>
             <br/>
             Thanks for using <b>T-I-L-E</b> and contributing to the project!
