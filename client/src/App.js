@@ -128,7 +128,7 @@ function App() {
       </>}
       <h2 className='mt-5' id="social"> STEP 4: Optional</h2>
       <p>Join our discord, to make suggestions, be alerted of issues, and receive any important announcements.</p>
-      <iframe id="discordWidget" title="Discord Widget" src="https://discord.com/widget?id=1177617947188011112&theme=dark" width="350" height="200" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>      <h2 id='contribute' className='mt-5'>Open to contributions</h2>
+      <iframe id="discordWidget" title="Discord Widget" src="https://discord.com/widget?id=1177617947188011112&theme=dark" width="350" height="70" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>      <h2 id='contribute' className='mt-5'>Open to contributions</h2>
       <p>PRs are welcome, please feel free to add courses, add a feature or fix a bug</p>
       <p>Github Repo: <a href='https://github.com/AAP9002/Timetable-ICS-Live-Editor/'>https://github.com/AAP9002/Timetable-ICS-Live-Editor/</a></p>
       <br />
