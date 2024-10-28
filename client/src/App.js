@@ -45,9 +45,7 @@ function App() {
   };
 
   const testUomApiUrlValid= ()=> {return uomAPI.endsWith('.ics') && getIds(uomAPI).length===2}
-
-  const [more_info, setMoreInfo] = useState(false);
-
+  
   return (
     <div className="App">
       <NavBar/>
