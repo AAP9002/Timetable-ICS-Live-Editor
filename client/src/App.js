@@ -46,19 +46,33 @@ function App() {
 
   const testUomApiUrlValid= ()=> {return uomAPI.endsWith('.ics') && getIds(uomAPI).length===2}
 
+  const [more_info, setMoreInfo] = useState(false);
+
   return (
     <div className="App">
       <NavBar/>
-      <div className='w-100 bg-danger text-white' style={{marginTop:"80px"}}>
+      <div className='w-100 bg-danger text-white' style={{marginTop:"80px", fontSize:"1.3rem"}}>
         <hr/>
         <b>Discontinued 30 Oct 2024
           <br/>
           Thank you for using T-I-L-E!</b>
         <hr/>
+            Due to server and domain costs, I have decided to discontinue <b>T-I-L-E</b>.
+            <br/>
+            ⚠️ Please set up your 📆 <a href='https://timetables.manchester.ac.uk/timetables' target='_blank' className='text-white'>official UoM timetable</a> to maintain access to your events. ⚠️
+            <br/>
+            <br/>
+            Thanks for using <b>T-I-L-E</b> and contributing to the project!
+            <br/>
+            It's been a lot of fun :)
+            <br/>
+            <br/>
         </div>
-      <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'180px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
-      <img src={discordLogo} alt='discord logo' style={{position:'absolute', top:'260px', right:'10px', margin:'15px', border:'0px', zIndex:'1000', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="#social"}}/>
-      <img id="logo"src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px',mixBlendMode:'darken'}}/>
+      <div className='position-relative w-100'>
+        <img id="logo"src={logo} alt="Timetable ICS Live Editor" className='w-100' style={{maxWidth:'600px',mixBlendMode:'darken'}}/>
+        <img src={ghLogo} alt='github logo' style={{position:'absolute', top:'30px', right:'10px', margin:'15px', border:'0px', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="https://github.com/AAP9002/Timetable-ICS-Live-Editor/"}}/>
+        <img src={discordLogo} alt='discord logo' style={{position:'absolute', top:'100px', right:'10px', margin:'15px', border:'0px', width:'50px', cursor:'alias'}} onClick={(e)=>{window.location="#social"}}/>
+      </div>
       <p>Time table editor designed to change your course codes to the actual course name.</p>
       <p>Available for University Of Manchester, please see <a href='#contribute'>supported courses</a>.</p>
       <div className='d-flex' style={{maxWidth:'800px'}}>
