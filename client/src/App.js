@@ -51,7 +51,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <div className='w-100 bg-danger text-white' style={{marginTop:"80px", fontSize:"1.3rem"}}>
+      <div id="discontinued" className='w-100 bg-danger text-white' style={{fontSize:"1.3rem", marginTop:"90px"}}>
         <hr/>
         <b>Discontinued 30 Oct 2024
           <br/>
@@ -75,6 +75,7 @@ function App() {
       </div>
       <p>Time table editor designed to change your course codes to the actual course name.</p>
       <p>Available for University Of Manchester, please see <a href='#contribute'>supported courses</a>.</p>
+      We recently hit 100,000 requests! 🎉
       <div className='d-flex' style={{maxWidth:'800px'}}>
         <div className='col-md-6'>
           <p style={{fontSize:"25px"}}>Before</p>
@@ -96,8 +97,10 @@ function App() {
         <li>5 . Click on <b>Copy</b></li>
         <li>6 . Paste the Timetable ICS Link into the box below</li>
       </ol>
+
+      <b className='text-danger'>Set up disabled - <a href="#discontinued">more info</a></b>
       <label for="icsBox">UoM Timetable ICS Link:</label>
-      <input id="icsBox" type="text" placeholder="Enter UoM ICS Link" onChange={(e)=>{setUomAPI(e.target.value)}} style={{ minWidth: "80%" }} />
+      <input id="icsBox" type="text" placeholder="Enter UoM ICS Link" onChange={(e)=>{setUomAPI(e.target.value)}} style={{ minWidth: "80%" }} disabled/>
       <br />
 
       <h2 className="mt-5"> STEP 2: Choose features</h2>
