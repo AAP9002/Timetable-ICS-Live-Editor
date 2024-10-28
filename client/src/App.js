@@ -51,7 +51,7 @@ function App() {
       <NavBar/>
       <div id="discontinued" className='w-100 bg-danger text-white' style={{fontSize:"1.3rem", marginTop:"90px"}}>
         <hr/>
-        <b>Discontinued 30 Oct 2024
+        <b>Discontinued 02 Oct 2024
           <br/>
           Thank you for using T-I-L-E!</b>
         <hr/>
